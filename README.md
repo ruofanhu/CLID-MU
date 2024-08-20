@@ -24,3 +24,5 @@ bash shs/submit_.sh
 ```
 ## Analysis
 The analysis code can be found in the **analysis** folder
+## Data
+Need to download data and put into the **data** folder
