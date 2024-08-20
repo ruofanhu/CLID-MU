@@ -13,7 +13,7 @@ alg=udametalearning
 cfg_name=udametalearnin.yaml
 python train.py --c config/classic_cv_meta/${alg}/${cfg_name}
 ```
-You can reproduce our experiment by running the scripts in the **shs** folder
+You can reproduce our experiment by running the scripts in the **shs** folder.
 ```bash
 # semi-supervised learing experiments
 bash shs/submit_s.sh
@@ -23,6 +23,7 @@ bash shs/submit_s.sh
 bash shs/submit_.sh
 ```
 ## Analysis
-The analysis code and results can be found in the **analysis** folder
+The analysis code and results can be found in the **analysis** folder.
 ## Data
-Need to download data and put into the **data** folder
+Need to download data and put into the **data** folder.
+CIFAR-10/100,CIFAR-10N,Clothing1M
