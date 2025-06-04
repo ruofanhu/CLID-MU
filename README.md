@@ -8,9 +8,6 @@
 
 This project uses a Conda environment to manage dependencies. To set up the environment, follow the steps below:
 
-### Prerequisites
-
-- [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/products/distribution) installed
 
 ### Installation
 
