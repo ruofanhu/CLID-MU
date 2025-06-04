@@ -1,6 +1,5 @@
-# CLIDMU
-© [2024] [Anonymous]. All rights reserved.
-This code is provided for review purposes only. No license is granted for use, distribution, or modification of this code at this time.
+# Incoporte CLID-MU into SSL Framework
+
 ## Create config files
 First generate the configuration for the experiments. the 'create_config_xxx.ipynb' files are all for configuration generation but for different datsets and settigns.
 ## Run experiment
@@ -24,6 +23,4 @@ bash shs/submit_.sh
 ```
 ## Analysis
 The analysis code and results can be found in the **analysis** folder.
-## Data
-Need to download data and put into the **data** folder.
-CIFAR-10/100,CIFAR-10N,Clothing1M
+
