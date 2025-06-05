@@ -49,6 +49,9 @@ Put all datasets into the 'data' folder.
    #Baselines
    bash submit_wnet_base.sh
    ```
+## SSL and SOTA
+The code for integrating CLID-MU with semi-supervised learning (SSL) and state-of-the-art (SOTA) methods can be found in the *semi* and *sota* folders, respectively.
+
 
 ## Acknowledgments
 
