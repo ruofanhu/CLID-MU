@@ -12,9 +12,9 @@ w_cov=${11:-0}
 w_svd=${12:-0}
 gamma=${13:-10}
 w_nege=${14:-10}
-for corruption_type in human
+for corruption_type in unif #inst flip
 do
-for corruption_prob in 0
+for corruption_prob in 0.4
 # 0.4
 do
 for meta_lr in 0.01    #3e-04 #0.01

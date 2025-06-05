@@ -9,7 +9,7 @@ meta_bsz=${8:-500}
 meta_goal=${9:-ce}
 scheduler=${10:-cos}
 Tmax=${11:-5}
-for corruption_type in inst
+for corruption_type in unif #inst flip
 do
 for corruption_prob in 0.6
 # 0.4
