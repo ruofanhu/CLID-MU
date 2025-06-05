@@ -1,15 +1,9 @@
 
-<b>Experiments</b>\
-First, please create a folder named <i>checkpoint</i> to store the results.\
-<code>mkdir checkpoint</code>\
-Next, run \
-<code>python Train_{dataset_name}.py --data_path <i>path-to-your-data</i></code>
+## Pre-trained Model
+We utilize the pre-trained ResNet-50 model for the Clothing1M experiments, which can be downloaded [here](https://drive.google.com/drive/folders/1MwFyCJE0SofZ-hK2SZC_bxyt-kP3q1K4?usp=drive_link). Unzip the pretrained folder.
 
-## L2B + DivideMix 
-To reproduce our results with DivideMix method:
-first follow above instruction to prepare env and datasets,
-please find  scripts with hyper-parameters located in <code> L2B_DivideMix/exp </code>
+## Experiments
+```bash
+bash submit_{dataset}.sh
 
 
-<b>License</b>\
-This project is licensed under the terms of the MIT license.
