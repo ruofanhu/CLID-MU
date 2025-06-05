@@ -1,0 +1,662 @@
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+| Building net
+data saved
+data saved
+Namespace(batch_size=128, lr=0.1, alpha=0.5, lambda_u=0, p_threshold=0.5, T=0.5, num_epochs=160, id='clothing1m_vri', data_path='../data', seed='2', gpuid=0, num_class=10, num_batches=3000, log_wandb=False, wandb_project='', wandb_experiment='', wandb_entity='', wandb_resume=False, need_clean=False, single_meta=0, moco_pretrained='/home/rhu/r_work/VRI/VRI_DivideMix/pretrained/ckpt_clothing_resnet50.pth', warmup=10, cos_lr=True, lam=0.01, meta_goal='ce_sloss', tau=0.5, meta_lr=0.0003, meta_bsz=100, model='vgg')
+
+| Test	 Net1  Acc: 30.92%
+
+==== Test ACC:30.92 ====
+
+
+| Test	 Net1  Acc: 36.40%
+
+==== Test ACC:36.4 ====
+
+
+| Test	 Net1  Acc: 49.76%
+
+==== Test ACC:49.76 ====
+
+
+| Test	 Net1  Acc: 43.86%
+
+==== Test ACC:43.86 ====
+
+
+| Test	 Net1  Acc: 38.64%
+
+==== Test ACC:38.64 ====
+
+
+| Test	 Net1  Acc: 49.54%
+
+==== Test ACC:49.54 ====
+
+
+| Test	 Net1  Acc: 56.68%
+
+==== Test ACC:56.68 ====
+
+
+| Test	 Net1  Acc: 56.22%
+
+==== Test ACC:56.22 ====
+
+
+| Test	 Net1  Acc: 52.10%
+
+==== Test ACC:52.1 ====
+
+
+| Test	 Net1  Acc: 57.30%
+
+==== Test ACC:57.3 ====
+
+
+| Test	 Net1  Acc: 53.70%
+
+==== Epoch:10 Test ACC:53.7 ====
+
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:143: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+Ensenble {10: 0.7174435138702393, 'acc_5': 0.537, 'acc_1': 0.537}
+
+| Test	 Net1  Acc: 60.24%
+
+==== Epoch:11 Test ACC:60.24 ====
+
+Ensenble {11: 0.5153214931488037, 10: 0.7174435138702393, 'acc_5': 0.651, 'acc_1': 0.6024}
+
+| Test	 Net1  Acc: 65.84%
+
+==== Epoch:12 Test ACC:65.84 ====
+
+Ensenble {11: 0.5153214931488037, 12: 0.6428710103034974, 10: 0.7174435138702393, 'acc_5': 0.6974, 'acc_1': 0.6024}
+
+| Test	 Net1  Acc: 60.00%
+
+==== Epoch:13 Test ACC:60.0 ====
+
+Ensenble {11: 0.5153214931488037, 12: 0.6428710103034974, 13: 0.681888860464096, 10: 0.7174435138702393, 'acc_5': 0.7062, 'acc_1': 0.6024}
+
+| Test	 Net1  Acc: 72.32%
+
+==== Epoch:14 Test ACC:72.32 ====
+
+Ensenble {14: 0.3820371225476265, 11: 0.5153214931488037, 12: 0.6428710103034974, 13: 0.681888860464096, 10: 0.7174435138702393, 'acc_5': 0.7404, 'acc_1': 0.7232}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 67.38%
+
+==== Epoch:15 Test ACC:67.38 ====
+
+Ensenble {14: 0.3820371225476265, 11: 0.5153214931488037, 12: 0.6428710103034974, 15: 0.6727631449699402, 13: 0.681888860464096, 'acc_5': 0.7736, 'acc_1': 0.7232}
+
+| Test	 Net1  Acc: 76.38%
+
+==== Epoch:16 Test ACC:76.38 ====
+
+Ensenble {16: 0.29992236495018004, 14: 0.3820371225476265, 11: 0.5153214931488037, 12: 0.6428710103034974, 15: 0.6727631449699402, 'acc_5': 0.78, 'acc_1': 0.7638}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 79.86%
+
+==== Epoch:17 Test ACC:79.86 ====
+
+Ensenble {16: 0.29992236495018004, 17: 0.3001005560159683, 14: 0.3820371225476265, 11: 0.5153214931488037, 12: 0.6428710103034974, 'acc_5': 0.8014, 'acc_1': 0.7638}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 81.30%
+
+==== Epoch:18 Test ACC:81.3 ====
+
+Ensenble {18: 0.18339413553476333, 16: 0.29992236495018004, 17: 0.3001005560159683, 14: 0.3820371225476265, 11: 0.5153214931488037, 'acc_5': 0.8172, 'acc_1': 0.813}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 83.12%
+
+==== Epoch:19 Test ACC:83.12 ====
+
+Ensenble {18: 0.18339413553476333, 19: 0.2094660446047783, 16: 0.29992236495018004, 17: 0.3001005560159683, 14: 0.3820371225476265, 'acc_5': 0.829, 'acc_1': 0.813}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 83.22%
+
+==== Epoch:20 Test ACC:83.22 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 16: 0.29992236495018004, 17: 0.3001005560159683, 'acc_5': 0.8326, 'acc_1': 0.813}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 83.22%
+
+==== Epoch:21 Test ACC:83.22 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 21: 0.22279722541570662, 16: 0.29992236495018004, 'acc_5': 0.8354, 'acc_1': 0.813}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 78.02%
+
+==== Epoch:22 Test ACC:78.02 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 21: 0.22279722541570662, 16: 0.29992236495018004, 'acc_5': 0.8354, 'acc_1': 0.813}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 78.32%
+
+==== Epoch:23 Test ACC:78.32 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 21: 0.22279722541570662, 16: 0.29992236495018004, 'acc_5': 0.8354, 'acc_1': 0.813}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 71.60%
+
+==== Epoch:24 Test ACC:71.6 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 21: 0.22279722541570662, 16: 0.29992236495018004, 'acc_5': 0.8354, 'acc_1': 0.813}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 65.56%
+
+==== Epoch:25 Test ACC:65.56 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 21: 0.22279722541570662, 16: 0.29992236495018004, 'acc_5': 0.8354, 'acc_1': 0.813}
+
+| Test	 Net1  Acc: 72.36%
+
+==== Epoch:26 Test ACC:72.36 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 21: 0.22279722541570662, 16: 0.29992236495018004, 'acc_5': 0.8354, 'acc_1': 0.813}
+
+| Test	 Net1  Acc: 57.76%
+
+==== Epoch:27 Test ACC:57.76 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 21: 0.22279722541570662, 16: 0.29992236495018004, 'acc_5': 0.8354, 'acc_1': 0.813}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 58.50%
+
+==== Epoch:28 Test ACC:58.5 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 21: 0.22279722541570662, 16: 0.29992236495018004, 'acc_5': 0.8354, 'acc_1': 0.813}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 61.22%
+
+==== Epoch:29 Test ACC:61.22 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 21: 0.22279722541570662, 16: 0.29992236495018004, 'acc_5': 0.8354, 'acc_1': 0.813}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 61.50%
+
+==== Epoch:30 Test ACC:61.5 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 21: 0.22279722541570662, 16: 0.29992236495018004, 'acc_5': 0.8354, 'acc_1': 0.813}
+
+| Test	 Net1  Acc: 69.56%
+
+==== Epoch:31 Test ACC:69.56 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 21: 0.22279722541570662, 16: 0.29992236495018004, 'acc_5': 0.8354, 'acc_1': 0.813}
+
+| Test	 Net1  Acc: 66.76%
+
+==== Epoch:32 Test ACC:66.76 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 21: 0.22279722541570662, 16: 0.29992236495018004, 'acc_5': 0.8354, 'acc_1': 0.813}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 70.44%
+
+==== Epoch:33 Test ACC:70.44 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 21: 0.22279722541570662, 16: 0.29992236495018004, 'acc_5': 0.8354, 'acc_1': 0.813}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 69.84%
+
+==== Epoch:34 Test ACC:69.84 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 21: 0.22279722541570662, 16: 0.29992236495018004, 'acc_5': 0.8354, 'acc_1': 0.813}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 70.68%
+
+==== Epoch:35 Test ACC:70.68 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 21: 0.22279722541570662, 16: 0.29992236495018004, 'acc_5': 0.8354, 'acc_1': 0.813}
+
+| Test	 Net1  Acc: 69.40%
+
+==== Epoch:36 Test ACC:69.4 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 21: 0.22279722541570662, 16: 0.29992236495018004, 'acc_5': 0.8354, 'acc_1': 0.813}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 81.94%
+
+==== Epoch:37 Test ACC:81.94 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 21: 0.22279722541570662, 16: 0.29992236495018004, 'acc_5': 0.8354, 'acc_1': 0.813}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 83.42%
+
+==== Epoch:38 Test ACC:83.42 ====
+
+Ensenble {18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 38: 0.2206805944442749, 21: 0.22279722541570662, 'acc_5': 0.8398, 'acc_1': 0.813}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 84.22%
+
+==== Epoch:39 Test ACC:84.22 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 20: 0.2070557776838541, 19: 0.2094660446047783, 38: 0.2206805944442749, 'acc_5': 0.847, 'acc_1': 0.8422}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 84.90%
+
+==== Epoch:40 Test ACC:84.9 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 40: 0.20110392346978187, 20: 0.2070557776838541, 19: 0.2094660446047783, 'acc_5': 0.8474, 'acc_1': 0.8422}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 84.50%
+
+==== Epoch:41 Test ACC:84.5 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 40: 0.20110392346978187, 20: 0.2070557776838541, 'acc_5': 0.848, 'acc_1': 0.8422}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 83.14%
+
+==== Epoch:42 Test ACC:83.14 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 40: 0.20110392346978187, 20: 0.2070557776838541, 'acc_5': 0.848, 'acc_1': 0.8422}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 76.30%
+
+==== Epoch:43 Test ACC:76.3 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 40: 0.20110392346978187, 20: 0.2070557776838541, 'acc_5': 0.848, 'acc_1': 0.8422}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 71.26%
+
+==== Epoch:44 Test ACC:71.26 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 40: 0.20110392346978187, 20: 0.2070557776838541, 'acc_5': 0.848, 'acc_1': 0.8422}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 71.56%
+
+==== Epoch:45 Test ACC:71.56 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 40: 0.20110392346978187, 20: 0.2070557776838541, 'acc_5': 0.848, 'acc_1': 0.8422}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 69.50%
+
+==== Epoch:46 Test ACC:69.5 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 40: 0.20110392346978187, 20: 0.2070557776838541, 'acc_5': 0.848, 'acc_1': 0.8422}
+
+| Test	 Net1  Acc: 68.34%
+
+==== Epoch:47 Test ACC:68.34 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 40: 0.20110392346978187, 20: 0.2070557776838541, 'acc_5': 0.848, 'acc_1': 0.8422}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 67.94%
+
+==== Epoch:48 Test ACC:67.94 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 40: 0.20110392346978187, 20: 0.2070557776838541, 'acc_5': 0.848, 'acc_1': 0.8422}
+
+| Test	 Net1  Acc: 68.72%
+
+==== Epoch:49 Test ACC:68.72 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 40: 0.20110392346978187, 20: 0.2070557776838541, 'acc_5': 0.848, 'acc_1': 0.8422}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 60.26%
+
+==== Epoch:50 Test ACC:60.26 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 40: 0.20110392346978187, 20: 0.2070557776838541, 'acc_5': 0.848, 'acc_1': 0.8422}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 47.56%
+
+==== Epoch:51 Test ACC:47.56 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 40: 0.20110392346978187, 20: 0.2070557776838541, 'acc_5': 0.848, 'acc_1': 0.8422}
+
+| Test	 Net1  Acc: 72.04%
+
+==== Epoch:52 Test ACC:72.04 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 40: 0.20110392346978187, 20: 0.2070557776838541, 'acc_5': 0.848, 'acc_1': 0.8422}
+
+| Test	 Net1  Acc: 67.68%
+
+==== Epoch:53 Test ACC:67.68 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 40: 0.20110392346978187, 20: 0.2070557776838541, 'acc_5': 0.848, 'acc_1': 0.8422}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 70.02%
+
+==== Epoch:54 Test ACC:70.02 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 40: 0.20110392346978187, 20: 0.2070557776838541, 'acc_5': 0.848, 'acc_1': 0.8422}
+
+| Test	 Net1  Acc: 78.48%
+
+==== Epoch:55 Test ACC:78.48 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 40: 0.20110392346978187, 20: 0.2070557776838541, 'acc_5': 0.848, 'acc_1': 0.8422}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 76.58%
+
+==== Epoch:56 Test ACC:76.58 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 40: 0.20110392346978187, 20: 0.2070557776838541, 'acc_5': 0.848, 'acc_1': 0.8422}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 80.62%
+
+==== Epoch:57 Test ACC:80.62 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 40: 0.20110392346978187, 20: 0.2070557776838541, 'acc_5': 0.848, 'acc_1': 0.8422}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 83.64%
+
+==== Epoch:58 Test ACC:83.64 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 40: 0.20110392346978187, 'acc_5': 0.8522, 'acc_1': 0.8422}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 85.06%
+
+==== Epoch:59 Test ACC:85.06 ====
+
+Ensenble {39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 40: 0.20110392346978187, 'acc_5': 0.8522, 'acc_1': 0.8422}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 85.10%
+
+==== Epoch:60 Test ACC:85.1 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 84.64%
+
+==== Epoch:61 Test ACC:84.64 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 83.52%
+
+==== Epoch:62 Test ACC:83.52 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 77.88%
+
+==== Epoch:63 Test ACC:77.88 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 77.10%
+
+==== Epoch:64 Test ACC:77.1 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 67.10%
+
+==== Epoch:65 Test ACC:67.1 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 71.80%
+
+==== Epoch:66 Test ACC:71.8 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+
+| Test	 Net1  Acc: 65.66%
+
+==== Epoch:67 Test ACC:65.66 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+
+| Test	 Net1  Acc: 61.78%
+
+==== Epoch:68 Test ACC:61.78 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+
+| Test	 Net1  Acc: 63.12%
+
+==== Epoch:69 Test ACC:63.12 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 54.76%
+
+==== Epoch:70 Test ACC:54.76 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+
+| Test	 Net1  Acc: 66.46%
+
+==== Epoch:71 Test ACC:66.46 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 53.40%
+
+==== Epoch:72 Test ACC:53.4 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 74.34%
+
+==== Epoch:73 Test ACC:74.34 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+
+| Test	 Net1  Acc: 74.24%
+
+==== Epoch:74 Test ACC:74.24 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 78.18%
+
+==== Epoch:75 Test ACC:78.18 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 76.12%
+
+==== Epoch:76 Test ACC:76.12 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 80.32%
+
+==== Epoch:77 Test ACC:80.32 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 84.28%
+
+==== Epoch:78 Test ACC:84.28 ====
+
+Ensenble {60: 0.16795039176940918, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 58: 0.19898539334535598, 'acc_5': 0.8558, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 85.56%
+
+==== Epoch:79 Test ACC:85.56 ====
+
+Ensenble {60: 0.16795039176940918, 79: 0.17118555083870887, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 'acc_5': 0.8582, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 85.44%
+
+==== Epoch:80 Test ACC:85.44 ====
+
+Ensenble {60: 0.16795039176940918, 79: 0.17118555083870887, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 'acc_5': 0.8582, 'acc_1': 0.851}
+
+| Test	 Net1  Acc: 85.32%
+
+==== Epoch:81 Test ACC:85.32 ====
+
+Ensenble {60: 0.16795039176940918, 79: 0.17118555083870887, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 'acc_5': 0.8582, 'acc_1': 0.851}
+
+| Test	 Net1  Acc: 82.68%
+
+==== Epoch:82 Test ACC:82.68 ====
+
+Ensenble {60: 0.16795039176940918, 79: 0.17118555083870887, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 'acc_5': 0.8582, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 73.84%
+
+==== Epoch:83 Test ACC:73.84 ====
+
+Ensenble {60: 0.16795039176940918, 79: 0.17118555083870887, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 'acc_5': 0.8582, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 73.24%
+
+==== Epoch:84 Test ACC:73.24 ====
+
+Ensenble {60: 0.16795039176940918, 79: 0.17118555083870887, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 'acc_5': 0.8582, 'acc_1': 0.851}
+
+| Test	 Net1  Acc: 75.34%
+
+==== Epoch:85 Test ACC:75.34 ====
+
+Ensenble {60: 0.16795039176940918, 79: 0.17118555083870887, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 'acc_5': 0.8582, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 67.50%
+
+==== Epoch:86 Test ACC:67.5 ====
+
+Ensenble {60: 0.16795039176940918, 79: 0.17118555083870887, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 'acc_5': 0.8582, 'acc_1': 0.851}
+
+| Test	 Net1  Acc: 70.40%
+
+==== Epoch:87 Test ACC:70.4 ====
+
+Ensenble {60: 0.16795039176940918, 79: 0.17118555083870887, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 'acc_5': 0.8582, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 64.06%
+
+==== Epoch:88 Test ACC:64.06 ====
+
+Ensenble {60: 0.16795039176940918, 79: 0.17118555083870887, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 'acc_5': 0.8582, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(
+
+| Test	 Net1  Acc: 46.70%
+
+==== Epoch:89 Test ACC:46.7 ====
+
+Ensenble {60: 0.16795039176940918, 79: 0.17118555083870887, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 'acc_5': 0.8582, 'acc_1': 0.851}
+
+| Test	 Net1  Acc: 54.28%
+
+==== Epoch:90 Test ACC:54.28 ====
+
+Ensenble {60: 0.16795039176940918, 79: 0.17118555083870887, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 'acc_5': 0.8582, 'acc_1': 0.851}
+
+| Test	 Net1  Acc: 73.64%
+
+==== Epoch:91 Test ACC:73.64 ====
+
+Ensenble {60: 0.16795039176940918, 79: 0.17118555083870887, 39: 0.1783449985086918, 18: 0.18339413553476333, 41: 0.19349126145243645, 'acc_5': 0.8582, 'acc_1': 0.851}
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/sklearn/mixture/_base.py:270: ConvergenceWarning: Best performing initialization did not converge. Try different init parameters, or increase max_iter, tol, or check for degenerate data.
+  warnings.warn(

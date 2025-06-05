@@ -50,23 +50,7 @@ class MetaLossNetHook(Hook):
             
         # algorithm.optimizer_wnet.zero_grad()
         with higher.innerloop_ctx(algorithm.model, algorithm.optimizer) as (meta_model, meta_opt):                
-            # Freeze the encoder layers
-            # if algorithm.args.frozen:
-                # for param in meta_model.conv1.parameters():
-                #     param.requires_grad = False
-                # for param in meta_model.block1.parameters():
-                #     param.requires_grad = False
-                # for param in meta_model.block2.parameters():
-                #     param.requires_grad = False
-                # for param in meta_model.block3.parameters():
-                #     param.requires_grad = False
-                # for param in meta_model.parameters():
-                #     param.requires_grad = False
-                # for param in meta_model.fc.parameters():
-                #     param.requires_grad = True                
-            # if algorithm.args.meta_goal == 'feat_expno1':
-            #     for param in meta_model.fc.parameters():
-            #         param.requires_grad = False
+     
                     
             outputs = meta_model(lb_data)
             logits = outputs['logits']
@@ -83,14 +67,7 @@ class MetaLossNetHook(Hook):
             cost_v = torch.reshape(virtual_loss , (len(virtual_loss), 1))
 
             v_lambda = algorithm.wnet(cost_v.data)
-            # norm_c = torch.sum(v_lambda)
-    
-            # if norm_c != 0:
-            #     v_lambda = v_lambda / norm_c
-            # else:
-            #     v_lambda = v_lambda
-
-            # meta_train_loss = torch.sum(cost_v * v_lambda)
+            
             meta_train_loss = torch.mean(cost_v * v_lambda)
             meta_opt.step(meta_train_loss)
 
@@ -136,76 +113,22 @@ class MetaLossNetHook(Hook):
             acc_val = accuracy_score(meta_label_true.cpu().tolist(), y_val.cpu().tolist())
             
 
-
-            if algorithm.args.meta_goal == 'feat':
-                total_loss = manifold_loss_soft(feature_u,logits_u,kernel=False)+1
-            elif algorithm.args.meta_goal == 'logits':
-                total_loss = manifold_loss_soft(logits_u,logits_u,kernel=False)+1     
-            elif algorithm.args.meta_goal == 'feat_exp':
-                total_loss = manifold_loss_soft_exp(feature_u,logits_u,contrast_th=algorithm.args.threshold)
-            elif algorithm.args.meta_goal == 'feat_expno1N': ##
-                total_loss = manifold_loss_soft_exp_no1_(feature_u,logits_u,contrast_th=algorithm.args.threshold)
-            elif algorithm.args.meta_goal == 'feat_expno1': ##
-                total_loss = manifold_loss_soft_exp_no1(feature_u,logits_u,contrast_th=algorithm.args.threshold)
-                
-            elif algorithm.args.meta_goal == 'hfeat_expno1N': ##
-                total_loss = manifold_loss_soft_exp_no1_hard(feature_u,logits_u,contrast_th=algorithm.args.threshold)
-            elif algorithm.args.meta_goal == 'sfeat_expno1N': ##
-                total_loss = manifold_loss_soft_exp_no1_soft(feature_u,logits_u,contrast_th=algorithm.args.threshold)
-                
-            elif algorithm.args.meta_goal == 'feat_expno1Nr':
-                total_loss = manifold_loss_soft_exp_no1r_(feature_u,logits_u,contrast_th=algorithm.args.threshold)
-
-            elif algorithm.args.meta_goal == 'logits_exp':
-                total_loss = manifold_loss_soft_exp(logits_u,logits_u,kernel=False)+1
-
-            elif algorithm.args.meta_goal == 'feat_exp_two':
-                total_loss = manifold_loss_soft_exp_two(feature_u,logits_u,kernel=False)
+            if algorithm.args.meta_goal == 'clid': ##
+                total_loss = clid_loss(feature_u,logits_u,contrast_th=algorithm.args.threshold)
+        
             elif algorithm.args.meta_goal == 'cer':
                 total_loss = ce_loss(logits_u, meta_label_true,reduction='mean')
             elif algorithm.args.meta_goal == 'cen':
                 total_loss = ce_loss(logits_u, meta_label,reduction='mean')
             elif algorithm.args.meta_goal == 'mae':
                 total_loss = mae_loss(logits_u, meta_label,reduction='mean')
-            elif algorithm.args.meta_goal =='JSD':
-                total_loss = JSD(feature_u,logits_u)                       
-            elif algorithm.args.meta_goal =='JSDI':
-                total_loss = 12 * sum([F.kl_div(logp_mixture, p_split, reduction='batchmean') for p_split in probs]) / len(probs)
-            elif algorithm.args.meta_goal == 'raw_u':
-                total_loss = unsup_loss
-            elif algorithm.args.meta_goal == 'lid':
-                total_loss = lid_feat_l2
-            elif algorithm.args.meta_goal == 'feat_exp_ws_':
-                total_loss = manifold_loss_soft_exp_ws_(feat_u_w,feat_u_s,logits_x_ulb_w,logits_x_ulb_s,algorithm.args.threshold)
-            elif algorithm.args.meta_goal == 'feat_exp_ws':
-                total_loss = manifold_loss_soft_exp_ws(feat_u_w,feat_u_s,logits_x_ulb_w,logits_x_ulb_s,algorithm.args.threshold)
-            elif algorithm.args.meta_goal == 'dfeat_expno1':
-                total_loss = dmanifold_loss_soft_exp_no1(feature_u,logits_u,contrast_th=algorithm.args.threshold)
 
-            elif algorithm.args.meta_goal == 'dfeat_expno1N':
-                total_loss = dmanifold_loss_soft_exp_no1_(feature_u,logits_u,contrast_th=algorithm.args.threshold)
             else:
-                total_loss = manifold_loss_soft_exp_no1_(feature_u,logits_u,contrast_th=algorithm.args.threshold)
+                total_loss = clid_loss(feature_u,logits_u,contrast_th=algorithm.args.threshold)
 
             Continue = True
         
-            # s_list_metrics = []
-            
-            # if algorithm.log['total_meta_loss']==[]:
-            #     list_metrics = []
-            # else:
-            #     list_metrics = algorithm.log['total_meta_loss']
-            # list_metrics.append(total_loss.item())
-            # p_l=0
-            # smoothing_alpha=0.999
-            # for i in range(len(list_metrics)):
-            #     p_l = smoothing_alpha *p_l + (1 - smoothing_alpha)* list_metrics[i]
-            #     s_list_metrics.append(p_l/(1 - smoothing_alpha**(i+1)))
-            #     diff=10000
-            #     if i>3000:
-            #         diff=np.mean(s_list_metrics[-5000:-1])-s_list_metrics[-1]
-            #     if diff<0:
-            #         Continue=False   
+    
 
             ## update wnet
             if Continue:

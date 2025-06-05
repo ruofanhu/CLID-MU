@@ -135,104 +135,7 @@ def clid_loss(feat,logits,contrast_th=0.1):
 
     return entr.mean()
     
-def clid_loss_1(feat,logits,contrast_th=0.1):
-    temperature = contrast_th # temperature could affect
-    probs_x_ulb = torch.softmax(logits, dim=-1)
-    max_probs, y = torch.max(probs_x_ulb, dim=-1)
-    feat = F.normalize(feat)
-    normalized_probs = F.normalize(probs_x_ulb) #l2norm??
-    
-    m_feat = feat.shape[1] # m_feat is the # of dimensions of the features
-    n_feat = feat.shape[0] # n_feat is the # of instances 
-    sim_n = torch.mm(feat, feat.t())/temperature 
-    # sim.fill_diagonal_(1)
 
-    pos_mask = (sim_n>=0).float()
-    # print(torch.sum((sim_n>=0).float()))
-    sim_n = sim_n * pos_mask
-    s_ij1 = F.softmax(sim_n,dim=-1)
-    
-    ####
-    eps= 1e-7
-    # weight_graph = torch.mm(max_probs.clone().reshape(-1,1), max_probs.clone().reshape(1,-1))
-    weight_graph = torch.mm(normalized_probs,normalized_probs.t())
-    weight_graph.fill_diagonal_(1)
-    weight_graph_ = weight_graph/weight_graph.sum(1,keepdim=True).detach()
-
-    assert weight_graph.shape==(n_feat,n_feat)
-
-    entr = torch.sum(-torch.log(s_ij1.detach()+eps)*weight_graph_,dim=1)
-    # entr = torch.sum(-torch.log(s_ij1+eps)*weight_graph_,dim=1)
-
-    return entr.mean()
-    
-def clid_loss_p(feat,feat_val_s2,logits,contrast_th=0.1):
-    temperature = contrast_th # temperature could affect
-    probs_x_ulb = torch.softmax(logits, dim=-1)
-    max_probs, y = torch.max(probs_x_ulb, dim=-1)
-    feat = F.normalize(feat)
-    normalized_probs = F.normalize(probs_x_ulb) #l2norm??
-    
-    m_feat = feat.shape[1] # m_feat is the # of dimensions of the features
-    n_feat = feat.shape[0] # n_feat is the # of instances 
-    sim_n = torch.mm(feat, feat.t())/temperature 
-    # sim.fill_diagonal_(1)
-    sim_aug_diag= torch.mm(feat_val_s2, feat_val_s2.t())/temperature 
-    diag_B = sim_aug_diag.diagonal()
-    sim_n.diagonal().copy_(diag_B)
-
-    pos_mask = (sim_n>=0).float()
-    # print(torch.sum((sim_n>=0).float()))
-    sim_n = sim_n * pos_mask
-    s_ij1 = F.softmax(sim_n,dim=-1)
-    
-    ####
-    eps= 1e-7
-    # weight_graph = torch.mm(max_probs.clone().reshape(-1,1), max_probs.clone().reshape(1,-1))
-    weight_graph = torch.mm(normalized_probs,normalized_probs.t())
-    weight_graph.fill_diagonal_(1)
-    weight_graph_ = weight_graph/weight_graph.sum(1,keepdim=True).detach()
-
-    assert weight_graph.shape==(n_feat,n_feat)
-
-    entr = torch.sum(-torch.log(s_ij1.detach()+eps)*weight_graph_,dim=1)
-    # entr = torch.sum(-torch.log(s_ij1+eps)*weight_graph_,dim=1)
-
-    return entr.mean()
-
-def clid_loss_s(feat,feat_val_s2,logits,contrast_th=0.1):
-    temperature = contrast_th # temperature could affect
-    probs_x_ulb = torch.softmax(logits, dim=-1)
-    max_probs, y = torch.max(probs_x_ulb, dim=-1)
-    feat = F.normalize(feat)
-    normalized_probs = F.normalize(probs_x_ulb) #l2norm??
-    
-    m_feat = feat.shape[1] # m_feat is the # of dimensions of the features
-    n_feat = feat.shape[0] # n_feat is the # of instances 
-    sim_n = torch.mm(feat, feat.t())/temperature 
-    # sim.fill_diagonal_(1)
-    sim_aug_diag= torch.mm(feat_val_s2, feat_val_s2.t())/temperature 
-    diag_B = sim_aug_diag.diagonal()
-    sim_n.diagonal().copy_(diag_B)
-
-    pos_mask = (sim_n>=0).float()
-    # print(torch.sum((sim_n>=0).float()))
-    sim_n = sim_n * pos_mask
-    s_ij1 = F.softmax(sim_n,dim=-1)
-    
-    ####
-    eps= 1e-7
-    # weight_graph = torch.mm(max_probs.clone().reshape(-1,1), max_probs.clone().reshape(1,-1))
-    weight_graph = torch.mm(normalized_probs,normalized_probs.t())
-    # weight_graph.fill_diagonal_(1)
-    weight_graph_ = weight_graph/weight_graph.sum(1,keepdim=True).detach()
-
-    assert weight_graph.shape==(n_feat,n_feat)
-
-    entr = torch.sum(-torch.log(s_ij1.detach()+eps)*weight_graph_,dim=1)
-    # entr = torch.sum(-torch.log(s_ij1+eps)*weight_graph_,dim=1)
-
-    return entr.mean()
 
 # https://github.com/Virusdoll/Active-Negative-Loss/blob/main/loss.py
 def mae_loss(logits, targets, reduction='mean'):
@@ -250,32 +153,6 @@ def mae_loss(logits, targets, reduction='mean'):
         return mae_loss.mean()
 
 
-# def eval_feat(model, train_loader):
-#     model.eval()
-#     features = []
-
-#     with torch.no_grad():
-#         for batch_idx, (inputs, targets, ids ,true_labels) in enumerate(train_loader):
-#             inputs, targets = inputs.cuda(), targets.cuda()
-#             outputs, feat = model(inputs)
-#             features.append(feat.cpu())
-#     features = torch.cat(features)
-#     lid_score =lid(features)
-#     lsvr = svd_loss(features).item()
-#     cov = cov_loss(features).item()
-#     features = torch.nn.functional.normalize(features, dim=1)
-#     features = features - features.mean(dim=1, keepdim=True)
-#     features = features.numpy()
-#     # run svd
-#     svd = TruncatedSVD(n_components=features.shape[1])
-#     svd.fit(features)
-#     components = svd.components_
-#     # print(u_vectors.shape)
-#     singular_values = svd.singular_values_
-#     P = singular_values / np.sum(singular_values) # Target distribution
-#     sve = -np.sum(P * np.log(P + 1e-12))
-#     return sve, lid_score.item(),lsvr,cov
-    
 
 
 
@@ -381,37 +258,21 @@ def test_meta(model, meta_loader,meta_goal,args):
         for batch_idx, (inputs,inputs_s1,inputs_s2, targets, _,true_labels) in enumerate(meta_loader):
             n_instances=len(targets)
             n+=n_instances
-            if meta_goal !='clid_p' and meta_goal !='clid_s':
-                inputs, targets,true_labels = inputs.cuda(), targets.cuda(),true_labels.cuda()
-                outputs, feat = model(inputs)
-                _, predicted = outputs.max(1)
+            inputs, targets,true_labels = inputs.cuda(), targets.cuda(),true_labels.cuda()
+            outputs, feat = model(inputs)
+            _, predicted = outputs.max(1)
 
-                if meta_goal =='clid':
-                    test_loss += clid_loss(feat,outputs, args.tau).item()*n_instances
-                    # +args.w_nege*neg_entropy(outputs).item()*n_instances
-                elif meta_goal=='clid_1':
-                    test_loss += clid_loss_1(feat,outputs, args.tau).item()*n_instances
+            if meta_goal =='clid':
+                test_loss += clid_loss(feat,outputs, args.tau).item()*n_instances 
 
-                elif meta_goal =='mae':
-                    test_loss += mae_loss(outputs, targets, reduction='mean').item()*n_instances
-                elif meta_goal =='ce_sloss':
-                    test_loss += F.cross_entropy(outputs, targets).item()*n_instances
-                elif meta_goal =='ce':
-                    test_loss += F.cross_entropy(outputs, true_labels).item()*n_instances
+            elif meta_goal =='mae':
+                test_loss += mae_loss(outputs, targets, reduction='mean').item()*n_instances
+            elif meta_goal =='ce_sloss':
+                test_loss += F.cross_entropy(outputs, targets).item()*n_instances
+            elif meta_goal =='ce':
+                test_loss += F.cross_entropy(outputs, true_labels).item()*n_instances
                     
-            elif meta_goal=='clid_p' or meta_goal=='clid_s':
-                inputs, targets,true_labels = inputs.cuda(), targets.cuda(),true_labels.cuda()
-                inputs_s1,inputs_s2 =inputs_s1.cuda(),inputs_s2.cuda()
-                combined_input = torch.cat([inputs, inputs_s1,inputs_s2], dim=0)
-                combined_y_g_hat, combined_feat = model(combined_input)
-                s=inputs.shape[0]
-                outputs, _,_ = torch.split(combined_y_g_hat, [s, s, s], dim=0)
-                feat, feat_val_s1,feat_val_s2 = torch.split(combined_feat, [s, s, s], dim=0)
-                if meta_goal=='clid_p':
-                    test_loss += clid_loss_p(feat_val_s1,feat_val_s2,outputs,args.tau).item()*n_instances
-                elif meta_goal=='clid_s':
-                    test_loss += clid_loss_s(feat_val_s1,feat_val_s2,outputs,args.tau).item()*n_instances
-                _, predicted = outputs.max(1)
+
             correct += predicted.eq(true_labels).sum().item()
             features.append(feat.cpu())
     features = torch.cat(features)

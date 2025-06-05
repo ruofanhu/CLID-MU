@@ -1,0 +1,11 @@
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+load all data into memory ....
+Traceback (most recent call last):
+  File "/home/rhu/r_work/VRI/VRI_DivideMix/Train_redmini_vri.py", line 372, in <module>
+    loader = mini_imagenet_dataloader.red_mini_imagenet_dataloader(args.train_split_file, batch_size=args.batch_size, num_workers=6, root_dir=args.train_path)
+  File "/home/rhu/r_work/VRI/VRI_DivideMix/dataloader_red_mini_imagenet.py", line 119, in __init__
+    img = Image.open(img_path).convert('RGB')
+  File "/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/PIL/Image.py", line 3227, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/rhu/r_work/VRI/VRI_DivideMix/data/red_mini_imagenet_s32/training_s32/red_noise_nl_0.4/99/5922767e5677aef4.jpg'

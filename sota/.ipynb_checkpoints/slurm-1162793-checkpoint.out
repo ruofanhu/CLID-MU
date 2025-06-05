@@ -1,0 +1,279 @@
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+| Building net
+data saved
+data saved
+Namespace(batch_size=128, lr=0.1, alpha=0.5, lambda_u=0, p_threshold=0.5, T=0.5, num_epochs=150, id='clothing1m_vri', data_path='../data', seed='10', gpuid=0, num_class=10, num_batches=3000, log_wandb=False, wandb_project='', wandb_experiment='', wandb_entity='', wandb_resume=False, need_clean=False, single_meta=0, moco_pretrained='/home/rhu/r_work/VRI/VRI_DivideMix/pretrained/ckpt_clothing_resnet50.pth', warmup=10, cos_lr=True, lam=0.01, meta_goal='clid', tau=0.5, meta_lr=0.01, meta_bsz=100, model='vgg')
+data saved
+data saved
+data saved
+data saved
+data saved
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #0	 Accuracy: 32.98%
+
+data saved
+data saved
+data saved
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #1	 Accuracy: 44.24%
+
+data saved
+data saved
+data saved
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #2	 Accuracy: 47.24%
+
+data saved
+data saved
+data saved
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #3	 Accuracy: 50.98%
+
+data saved
+data saved
+data saved
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #4	 Accuracy: 59.52%
+
+data saved
+data saved
+data saved
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #5	 Accuracy: 60.20%
+
+data saved
+data saved
+data saved
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #6	 Accuracy: 65.28%
+
+data saved
+data saved
+data saved
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #7	 Accuracy: 61.38%
+
+data saved
+data saved
+data saved
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #8	 Accuracy: 65.14%
+
+data saved
+data saved
+data saved
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #9	 Accuracy: 68.02%
+
+data saved
+data saved
+Train Net1
+data saved
+data saved
+
+Train Net2
+data saved
+data saved
+Training time 0:26:22
+Ensemble ACC1: {10: 4.879680919647217, 'acc_5': 0.5818, 'acc_1': 0.5818} 
+Ensemble ACC2: {10: 4.823266887664795, 'acc_5': 0.64, 'acc_1': 0.64} 
+ Double Ensemble: 0.6802
+
+| Test Epoch #10	 Accuracy: 68.02%
+
+data saved
+data saved
+Train Net1
+data saved
+data saved
+
+Train Net2
+data saved
+data saved
+Training time 0:24:20
+Ensemble ACC1: {10: 4.879680919647217, 11: 4.9191515922546385, 'acc_5': 0.644, 'acc_1': 0.5818} 
+Ensemble ACC2: {10: 4.823266887664795, 11: 4.887643432617187, 'acc_5': 0.6842, 'acc_1': 0.64} 
+ Double Ensemble: 0.6934
+
+| Test Epoch #11	 Accuracy: 64.76%
+
+data saved
+data saved
+Train Net1
+data saved
+data saved
+
+Train Net2
+data saved
+data saved
+Training time 0:23:34
+Ensemble ACC1: {12: 4.784115600585937, 10: 4.879680919647217, 11: 4.9191515922546385, 'acc_5': 0.6662, 'acc_1': 0.5936} 
+Ensemble ACC2: {10: 4.823266887664795, 11: 4.887643432617187, 12: 4.991363906860352, 'acc_5': 0.7044, 'acc_1': 0.64} 
+ Double Ensemble: 0.6952
+
+| Test Epoch #12	 Accuracy: 64.30%
+
+data saved
+data saved
+Train Net1
+data saved
+data saved
+
+Train Net2
+data saved
+data saved
+Training time 0:19:59
+Ensemble ACC1: {12: 4.784115600585937, 13: 4.8522107124328615, 10: 4.879680919647217, 11: 4.9191515922546385, 'acc_5': 0.6658, 'acc_1': 0.5936} 
+Ensemble ACC2: {13: 4.813900566101074, 10: 4.823266887664795, 11: 4.887643432617187, 12: 4.991363906860352, 'acc_5': 0.716, 'acc_1': 0.6244} 
+ Double Ensemble: 0.6986
+
+| Test Epoch #13	 Accuracy: 62.44%
+
+data saved
+data saved
+Train Net1
+data saved
+data saved
+
+Train Net2
+data saved
+data saved
+Training time 0:18:51
+Ensemble ACC1: {12: 4.784115600585937, 13: 4.8522107124328615, 10: 4.879680919647217, 11: 4.9191515922546385, 14: 4.940317249298095, 'acc_5': 0.6826, 'acc_1': 0.5936} 
+Ensemble ACC2: {14: 4.798788833618164, 13: 4.813900566101074, 10: 4.823266887664795, 11: 4.887643432617187, 12: 4.991363906860352, 'acc_5': 0.7166, 'acc_1': 0.6054} 
+ Double Ensemble: 0.6892
+
+| Test Epoch #14	 Accuracy: 65.36%
+
+data saved
+data saved
+Train Net1
+data saved
+data saved
+
+Train Net2
+data saved
+data saved
+Training time 0:18:34
+Ensemble ACC1: {15: 4.753318786621094, 12: 4.784115600585937, 13: 4.8522107124328615, 10: 4.879680919647217, 11: 4.9191515922546385, 'acc_5': 0.6692, 'acc_1': 0.5676} 
+Ensemble ACC2: {15: 4.790424156188965, 14: 4.798788833618164, 13: 4.813900566101074, 10: 4.823266887664795, 11: 4.887643432617187, 'acc_5': 0.7116, 'acc_1': 0.6366} 
+ Double Ensemble: 0.6886
+
+| Test Epoch #15	 Accuracy: 65.22%
+
+data saved
+data saved
+Train Net1
+data saved
+data saved
+
+Train Net2
+data saved
+data saved
+Training time 0:18:46
+Ensemble ACC1: {15: 4.753318786621094, 16: 4.783878040313721, 12: 4.784115600585937, 13: 4.8522107124328615, 10: 4.879680919647217, 'acc_5': 0.6768, 'acc_1': 0.5676} 
+Ensemble ACC2: {15: 4.790424156188965, 14: 4.798788833618164, 13: 4.813900566101074, 10: 4.823266887664795, 16: 4.873333549499511, 'acc_5': 0.7018, 'acc_1': 0.6366} 
+ Double Ensemble: 0.6788
+
+| Test Epoch #16	 Accuracy: 64.62%
+
+data saved
+data saved
+Train Net1
+data saved
+data saved
+
+Train Net2
+data saved
+data saved
+Training time 0:17:33
+Ensemble ACC1: {17: 4.674450874328613, 15: 4.753318786621094, 16: 4.783878040313721, 12: 4.784115600585937, 13: 4.8522107124328615, 'acc_5': 0.6724, 'acc_1': 0.6098} 
+Ensemble ACC2: {17: 4.765973854064941, 15: 4.790424156188965, 14: 4.798788833618164, 13: 4.813900566101074, 10: 4.823266887664795, 'acc_5': 0.7086, 'acc_1': 0.62} 
+ Double Ensemble: 0.6806
+
+| Test Epoch #17	 Accuracy: 66.52%
+
+data saved
+data saved
+Train Net1
+data saved
+data saved
+
+Train Net2
+data saved
+data saved
+Training time 0:17:45
+Ensemble ACC1: {17: 4.674450874328613, 15: 4.753318786621094, 16: 4.783878040313721, 12: 4.784115600585937, 13: 4.8522107124328615, 'acc_5': 0.6724, 'acc_1': 0.6098} 
+Ensemble ACC2: {17: 4.765973854064941, 15: 4.790424156188965, 14: 4.798788833618164, 13: 4.813900566101074, 18: 4.817757034301758, 'acc_5': 0.6966, 'acc_1': 0.62} 
+ Double Ensemble: 0.6806
+
+| Test Epoch #18	 Accuracy: 64.14%
+
+data saved
+data saved
+Train Net1
+data saved
+data saved
+
+Train Net2
+data saved
+data saved
+Training time 0:17:17
+Ensemble ACC1: {17: 4.674450874328613, 19: 4.70927677154541, 15: 4.753318786621094, 16: 4.783878040313721, 12: 4.784115600585937, 'acc_5': 0.6838, 'acc_1': 0.6098} 
+Ensemble ACC2: {17: 4.765973854064941, 19: 4.787454414367676, 15: 4.790424156188965, 14: 4.798788833618164, 13: 4.813900566101074, 'acc_5': 0.6786, 'acc_1': 0.62} 
+ Double Ensemble: 0.6766
+
+| Test Epoch #19	 Accuracy: 56.78%
+
+data saved
+data saved
+Train Net1
+data saved
+data saved
+
+Train Net2
+data saved
+data saved
+Training time 0:16:03
+Ensemble ACC1: {17: 4.674450874328613, 19: 4.70927677154541, 15: 4.753318786621094, 16: 4.783878040313721, 12: 4.784115600585937, 'acc_5': 0.6838, 'acc_1': 0.6098} 
+Ensemble ACC2: {17: 4.765973854064941, 19: 4.787454414367676, 15: 4.790424156188965, 14: 4.798788833618164, 13: 4.813900566101074, 'acc_5': 0.6786, 'acc_1': 0.62} 
+ Double Ensemble: 0.6766
+
+| Test Epoch #20	 Accuracy: 64.96%
+
+data saved
+data saved
+Train Net1
+data saved
+data saved

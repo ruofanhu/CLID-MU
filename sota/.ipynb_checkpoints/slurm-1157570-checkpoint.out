@@ -1,0 +1,66 @@
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+| Building net
+data saved
+data saved
+Namespace(batch_size=128, lr=0.1, alpha=0.5, lambda_u=0, p_threshold=0.5, T=0.5, num_epochs=160, id='clothing1m_vri', data_path='../data', seed='8', gpuid=0, num_class=10, num_batches=3000, log_wandb=False, wandb_project='', wandb_experiment='', wandb_entity='', wandb_resume=False, need_clean=False, single_meta=0, moco_pretrained='/home/rhu/r_work/VRI/VRI_DivideMix/pretrained/ckpt_clothing_resnet50.pth', warmup=10, cos_lr=True, lam=0.01, meta_goal='clid', tau=0.5, meta_lr=0.01, meta_bsz=100, model='vgg')
+
+| Test	 Net1  Acc: 27.80%
+
+==== Test ACC:27.8 ====
+
+
+| Test	 Net1  Acc: 41.84%
+
+==== Test ACC:41.84 ====
+
+
+| Test	 Net1  Acc: 40.10%
+
+==== Test ACC:40.1 ====
+
+
+| Test	 Net1  Acc: 47.26%
+
+==== Test ACC:47.26 ====
+
+
+| Test	 Net1  Acc: 39.08%
+
+==== Test ACC:39.08 ====
+
+
+| Test	 Net1  Acc: 50.36%
+
+==== Test ACC:50.36 ====
+
+
+| Test	 Net1  Acc: 52.42%
+
+==== Test ACC:52.42 ====
+
+
+| Test	 Net1  Acc: 55.16%
+
+==== Test ACC:55.16 ====
+
+
+| Test	 Net1  Acc: 49.44%
+
+==== Test ACC:49.44 ====
+
+
+| Test	 Net1  Acc: 55.22%
+
+==== Test ACC:55.22 ====
+
+data saved
+
+| Test	 Net1  Acc: 49.50%
+
+==== Epoch:10 Test ACC:49.5 ====
+
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:143: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+Ensenble {10: 4.929215049743652, 'acc_5': 0.495, 'acc_1': 0.495}
+data saved

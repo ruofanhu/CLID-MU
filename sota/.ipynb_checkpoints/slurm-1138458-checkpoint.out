@@ -1,0 +1,7 @@
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Namespace(batch_size=64, lr=0.02, alpha=1.5, lambda_u=50, p_threshold=0, T=0.5, num_epochs=300, id='redmini_vri', data_path='/home/rhu/r_work/VRI/VRI_DivideMix/data/red_mini_imagenet_s32', seed='8', gpuid=0, num_class=100, num_batches=1000, log_wandb=False, wandb_project='', wandb_experiment='', wandb_entity='', wandb_resume=False, need_clean=False, single_meta=0, moco_pretrained=None, warmup=30, cos_lr=False, lam=0.01, meta_goal='clid', tau=0.5, meta_lr=0.01, meta_bsz=100, split='red_noise_nl_0.4')
+| Building net
+Warmup Net1
+
+Warmup Net2

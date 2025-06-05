@@ -1,0 +1,649 @@
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+| Building net
+Successfully load pre-trained model!!!
+Successfully load pre-trained model!!!
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 61.53%
+
+| Test	 Net2  Acc: 60.92%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 62.25%
+
+
+==== Test ACC:62.24586737602128 ====
+
+
+Train Net1
+labeled data has a size of 17648
+unlabeled data has a size of 14352
+
+Train Net2
+labeled data has a size of 17837
+unlabeled data has a size of 14163
+
+| Test	 Net1  Acc: 60.78%
+
+| Test	 Net2  Acc: 61.44%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 61.90%
+
+
+==== Test ACC:61.90385711571347 ====
+
+
+Train Net1
+labeled data has a size of 21226
+unlabeled data has a size of 10774
+
+Train Net2
+labeled data has a size of 20334
+unlabeled data has a size of 11666
+
+| Test	 Net1  Acc: 62.07%
+
+| Test	 Net2  Acc: 62.63%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 63.18%
+
+
+==== Test ACC:63.17689530685921 ====
+
+
+Train Net1
+labeled data has a size of 20572
+unlabeled data has a size of 11428
+
+Train Net2
+labeled data has a size of 21948
+unlabeled data has a size of 10052
+
+| Test	 Net1  Acc: 64.18%
+
+| Test	 Net2  Acc: 64.66%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 65.18%
+
+
+==== Test ACC:65.18145544366331 ====
+
+
+Train Net1
+labeled data has a size of 22038
+unlabeled data has a size of 9962
+
+Train Net2
+labeled data has a size of 22162
+unlabeled data has a size of 9838
+
+| Test	 Net1  Acc: 66.67%
+
+| Test	 Net2  Acc: 66.09%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 66.83%
+
+
+==== Test ACC:66.83450503515105 ====
+
+
+Train Net1
+labeled data has a size of 21905
+unlabeled data has a size of 10095
+
+Train Net2
+labeled data has a size of 22433
+unlabeled data has a size of 9567
+
+| Test	 Net1  Acc: 67.26%
+
+| Test	 Net2  Acc: 65.11%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 67.41%
+
+
+==== Test ACC:67.41402242067262 ====
+
+
+Train Net1
+labeled data has a size of 22338
+unlabeled data has a size of 9662
+
+Train Net2
+labeled data has a size of 22949
+unlabeled data has a size of 9051
+
+| Test	 Net1  Acc: 67.48%
+
+| Test	 Net2  Acc: 67.22%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 68.18%
+
+
+==== Test ACC:68.18354550636519 ====
+
+
+Train Net1
+labeled data has a size of 22603
+unlabeled data has a size of 9397
+
+Train Net2
+labeled data has a size of 22787
+unlabeled data has a size of 9213
+
+| Test	 Net1  Acc: 68.57%
+
+| Test	 Net2  Acc: 66.24%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 68.41%
+
+
+==== Test ACC:68.4115523465704 ====
+
+
+Train Net1
+labeled data has a size of 22058
+unlabeled data has a size of 9942
+
+Train Net2
+labeled data has a size of 23571
+unlabeled data has a size of 8429
+
+| Test	 Net1  Acc: 68.20%
+
+| Test	 Net2  Acc: 68.29%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 69.10%
+
+
+==== Test ACC:69.09557286718602 ====
+
+
+Train Net1
+labeled data has a size of 22938
+unlabeled data has a size of 9062
+
+Train Net2
+labeled data has a size of 23164
+unlabeled data has a size of 8836
+
+| Test	 Net1  Acc: 69.29%
+
+| Test	 Net2  Acc: 69.16%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 69.61%
+
+
+==== Test ACC:69.60858825764772 ====
+
+
+Train Net1
+labeled data has a size of 23425
+unlabeled data has a size of 8575
+
+Train Net2
+labeled data has a size of 23330
+unlabeled data has a size of 8670
+
+| Test	 Net1  Acc: 67.40%
+
+| Test	 Net2  Acc: 70.00%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 69.97%
+
+
+==== Test ACC:69.96959908797264 ====
+
+
+Train Net1
+labeled data has a size of 23307
+unlabeled data has a size of 8693
+
+Train Net2
+labeled data has a size of 22922
+unlabeled data has a size of 9078
+
+| Test	 Net1  Acc: 69.87%
+
+| Test	 Net2  Acc: 69.55%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 70.65%
+
+
+==== Test ACC:70.65361960858826 ====
+
+
+Train Net1
+labeled data has a size of 23253
+unlabeled data has a size of 8747
+
+Train Net2
+labeled data has a size of 23559
+unlabeled data has a size of 8441
+
+| Test	 Net1  Acc: 69.51%
+
+| Test	 Net2  Acc: 69.43%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 70.20%
+
+
+==== Test ACC:70.19760592817785 ====
+
+
+Train Net1
+labeled data has a size of 23293
+unlabeled data has a size of 8707
+
+Train Net2
+labeled data has a size of 23915
+unlabeled data has a size of 8085
+
+| Test	 Net1  Acc: 70.04%
+
+| Test	 Net2  Acc: 69.87%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 70.80%
+
+
+==== Test ACC:70.79612388371652 ====
+
+
+Train Net1
+labeled data has a size of 24280
+unlabeled data has a size of 7720
+
+Train Net2
+labeled data has a size of 23524
+unlabeled data has a size of 8476
+
+| Test	 Net1  Acc: 70.00%
+
+| Test	 Net2  Acc: 67.04%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 70.49%
+
+
+==== Test ACC:70.4921147634429 ====
+
+
+Train Net1
+labeled data has a size of 23771
+unlabeled data has a size of 8229
+
+Train Net2
+labeled data has a size of 23835
+unlabeled data has a size of 8165
+
+| Test	 Net1  Acc: 70.49%
+
+| Test	 Net2  Acc: 70.27%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 70.86%
+
+
+==== Test ACC:70.86262587877637 ====
+
+
+Train Net1
+labeled data has a size of 24261
+unlabeled data has a size of 7739
+
+Train Net2
+labeled data has a size of 24878
+unlabeled data has a size of 7122
+
+| Test	 Net1  Acc: 69.98%
+
+| Test	 Net2  Acc: 70.13%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 71.01%
+
+
+==== Test ACC:71.00513015390462 ====
+
+
+Train Net1
+labeled data has a size of 24051
+unlabeled data has a size of 7949
+
+Train Net2
+labeled data has a size of 23847
+unlabeled data has a size of 8153
+
+| Test	 Net1  Acc: 70.27%
+
+| Test	 Net2  Acc: 70.01%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 71.12%
+
+
+==== Test ACC:71.11913357400722 ====
+
+
+Train Net1
+labeled data has a size of 24225
+unlabeled data has a size of 7775
+
+Train Net2
+labeled data has a size of 24176
+unlabeled data has a size of 7824
+
+| Test	 Net1  Acc: 69.86%
+
+| Test	 Net2  Acc: 70.65%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 71.49%
+
+
+==== Test ACC:71.48964468934068 ====
+
+
+Train Net1
+labeled data has a size of 24612
+unlabeled data has a size of 7388
+
+Train Net2
+labeled data has a size of 23545
+unlabeled data has a size of 8455
+
+| Test	 Net1  Acc: 71.20%
+
+| Test	 Net2  Acc: 69.92%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 71.52%
+
+
+==== Test ACC:71.51814554436633 ====
+
+
+Train Net1
+labeled data has a size of 24262
+unlabeled data has a size of 7738
+
+Train Net2
+labeled data has a size of 24034
+unlabeled data has a size of 7966
+
+| Test	 Net1  Acc: 70.45%
+
+| Test	 Net2  Acc: 70.21%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 72.05%
+
+
+==== Test ACC:72.05016150484515 ====
+
+
+Train Net1
+labeled data has a size of 24507
+unlabeled data has a size of 7493
+
+Train Net2
+labeled data has a size of 24597
+unlabeled data has a size of 7403
+
+| Test	 Net1  Acc: 71.54%
+
+| Test	 Net2  Acc: 71.33%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 72.15%
+
+
+==== Test ACC:72.14516435493064 ====
+
+
+Train Net1
+labeled data has a size of 24842
+unlabeled data has a size of 7158
+
+Train Net2
+labeled data has a size of 24601
+unlabeled data has a size of 7399
+
+| Test	 Net1  Acc: 71.46%
+
+| Test	 Net2  Acc: 71.45%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 72.20%
+
+
+==== Test ACC:72.20216606498195 ====
+
+
+Train Net1
+labeled data has a size of 24751
+unlabeled data has a size of 7249
+
+Train Net2
+labeled data has a size of 24660
+unlabeled data has a size of 7340
+
+| Test	 Net1  Acc: 71.25%
+
+| Test	 Net2  Acc: 71.46%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 72.21%
+
+
+==== Test ACC:72.2116663499905 ====
+
+
+Train Net1
+labeled data has a size of 24609
+unlabeled data has a size of 7391
+
+Train Net2
+labeled data has a size of 24923
+unlabeled data has a size of 7077
+
+| Test	 Net1  Acc: 70.34%
+
+| Test	 Net2  Acc: 70.85%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 71.72%
+
+
+==== Test ACC:71.71765152954589 ====
+
+
+Train Net1
+labeled data has a size of 24903
+unlabeled data has a size of 7097
+
+Train Net2
+labeled data has a size of 24437
+unlabeled data has a size of 7563
+
+| Test	 Net1  Acc: 71.27%
+
+| Test	 Net2  Acc: 71.78%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 72.47%
+
+
+==== Test ACC:72.46817404522136 ====
+
+
+Train Net1
+labeled data has a size of 24856
+unlabeled data has a size of 7144
+
+Train Net2
+labeled data has a size of 24654
+unlabeled data has a size of 7346
+
+| Test	 Net1  Acc: 72.20%
+
+| Test	 Net2  Acc: 71.68%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 72.82%
+
+
+==== Test ACC:72.81968459053772 ====
+
+
+Train Net1
+labeled data has a size of 25010
+unlabeled data has a size of 6990
+
+Train Net2
+labeled data has a size of 25088
+unlabeled data has a size of 6912
+
+| Test	 Net1  Acc: 71.55%
+
+| Test	 Net2  Acc: 71.86%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 72.71%
+
+
+==== Test ACC:72.70568117043511 ====
+
+
+Train Net1
+labeled data has a size of 25187
+unlabeled data has a size of 6813
+
+Train Net2
+labeled data has a size of 24909
+unlabeled data has a size of 7091
+
+| Test	 Net1  Acc: 71.04%
+
+| Test	 Net2  Acc: 72.20%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 72.79%
+
+
+==== Test ACC:72.79118373551206 ====
+
+
+Train Net1
+labeled data has a size of 25186
+unlabeled data has a size of 6814
+
+Train Net2
+labeled data has a size of 24758
+unlabeled data has a size of 7242
+
+| Test	 Net1  Acc: 71.87%
+
+| Test	 Net2  Acc: 71.93%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 72.82%
+
+
+==== Test ACC:72.81968459053772 ====
+
+
+Train Net1
+labeled data has a size of 24427
+unlabeled data has a size of 7573
+
+Train Net2
+labeled data has a size of 25044
+unlabeled data has a size of 6956
+
+| Test	 Net1  Acc: 71.43%
+
+| Test	 Net2  Acc: 72.39%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 72.87%
+
+
+==== Test ACC:72.86718601558047 ====
+
+
+Train Net1
+labeled data has a size of 25081
+unlabeled data has a size of 6919
+
+Train Net2
+labeled data has a size of 24952
+unlabeled data has a size of 7048
+
+| Test	 Net1  Acc: 72.05%
+
+| Test	 Net2  Acc: 71.96%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 72.67%
+
+
+==== Test ACC:72.66768003040092 ====
+
+
+Train Net1
+labeled data has a size of 25597
+unlabeled data has a size of 6403
+
+Train Net2
+labeled data has a size of 25178
+unlabeled data has a size of 6822
+slurmstepd: error: *** JOB 1139534 ON gpu-4-12 CANCELLED AT 2025-01-18T13:05:27 DUE TO TIME LIMIT ***

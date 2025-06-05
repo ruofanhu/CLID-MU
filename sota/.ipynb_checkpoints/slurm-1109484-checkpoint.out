@@ -1,0 +1,15 @@
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+/home/rhu/r_work/VRI/VRI_DivideMix/dataloader_red_mini_imagenet.py:128: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:275.)
+  self.data = torch.tensor(data, dtype=torch.float32)
+| Building net
+Traceback (most recent call last):
+  File "/home/rhu/r_work/VRI/VRI_DivideMix/Train_redmini_vri.py", line 416, in <module>
+    meta_loader_1 = DataLoader(
+  File "/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 350, in __init__
+    sampler = RandomSampler(dataset, generator=generator)  # type: ignore[arg-type]
+  File "/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/sampler.py", line 142, in __init__
+    if not isinstance(self.num_samples, int) or self.num_samples <= 0:
+  File "/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/sampler.py", line 149, in num_samples
+    return len(self.data_source)
+TypeError: object of type 'red_mini_imagenet_dataloader' has no len()

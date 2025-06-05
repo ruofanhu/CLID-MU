@@ -1,0 +1,1544 @@
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+already save noisy label file.
+already save noisy label file.
+| Building net
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #0	 Accuracy: 45.91%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #1	 Accuracy: 51.58%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #2	 Accuracy: 55.25%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #3	 Accuracy: 62.38%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #4	 Accuracy: 68.23%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #5	 Accuracy: 71.21%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #6	 Accuracy: 72.37%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #7	 Accuracy: 74.74%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #8	 Accuracy: 77.11%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #9	 Accuracy: 74.22%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #10	 Accuracy: 77.02%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #11	 Accuracy: 75.30%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #12	 Accuracy: 77.02%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #13	 Accuracy: 78.19%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #14	 Accuracy: 76.86%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #15	 Accuracy: 75.95%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #16	 Accuracy: 78.50%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #17	 Accuracy: 79.78%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #18	 Accuracy: 79.59%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #19	 Accuracy: 77.43%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #20	 Accuracy: 80.66%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #21	 Accuracy: 79.32%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #22	 Accuracy: 79.31%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #23	 Accuracy: 80.04%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #24	 Accuracy: 80.25%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #25	 Accuracy: 78.21%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #26	 Accuracy: 77.98%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #27	 Accuracy: 77.74%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #28	 Accuracy: 79.49%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #29	 Accuracy: 78.71%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchnet/meter/aucmeter.py:28: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  self.scores = torch.DoubleTensor(torch.DoubleStorage()).numpy()
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:32258   AUC:0.913
+
+labeled data has a size of 32258
+already save noisy label file.
+unlabeled data has a size of 17742
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:34627   AUC:0.918
+
+labeled data has a size of 34627
+already save noisy label file.
+unlabeled data has a size of 15373
+Training time 0:01:38
+
+| Test Epoch #30	 Accuracy: 83.00%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:34288   AUC:0.956
+
+labeled data has a size of 34288
+already save noisy label file.
+unlabeled data has a size of 15712
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:32109   AUC:0.955
+
+labeled data has a size of 32109
+already save noisy label file.
+unlabeled data has a size of 17891
+Training time 0:01:38
+
+| Test Epoch #31	 Accuracy: 83.82%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:30247   AUC:0.960
+
+labeled data has a size of 30247
+already save noisy label file.
+unlabeled data has a size of 19753
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:33865   AUC:0.960
+
+labeled data has a size of 33865
+already save noisy label file.
+unlabeled data has a size of 16135
+Training time 0:01:34
+
+| Test Epoch #32	 Accuracy: 83.64%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:30676   AUC:0.960
+
+labeled data has a size of 30676
+already save noisy label file.
+unlabeled data has a size of 19324
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:30483   AUC:0.960
+
+labeled data has a size of 30483
+already save noisy label file.
+unlabeled data has a size of 19517
+Training time 0:01:31
+
+| Test Epoch #33	 Accuracy: 84.30%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29479   AUC:0.964
+
+labeled data has a size of 29479
+already save noisy label file.
+unlabeled data has a size of 20521
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29674   AUC:0.965
+
+labeled data has a size of 29674
+already save noisy label file.
+unlabeled data has a size of 20326
+Training time 0:01:27
+
+| Test Epoch #34	 Accuracy: 85.06%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29214   AUC:0.967
+
+labeled data has a size of 29214
+already save noisy label file.
+unlabeled data has a size of 20786
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:28971   AUC:0.963
+
+labeled data has a size of 28971
+already save noisy label file.
+unlabeled data has a size of 21029
+Training time 0:01:28
+
+| Test Epoch #35	 Accuracy: 85.35%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:28554   AUC:0.967
+
+labeled data has a size of 28554
+already save noisy label file.
+unlabeled data has a size of 21446
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:28801   AUC:0.967
+
+labeled data has a size of 28801
+already save noisy label file.
+unlabeled data has a size of 21199
+Training time 0:01:28
+
+| Test Epoch #36	 Accuracy: 85.38%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:28405   AUC:0.969
+
+labeled data has a size of 28405
+already save noisy label file.
+unlabeled data has a size of 21595
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:28440   AUC:0.968
+
+labeled data has a size of 28440
+already save noisy label file.
+unlabeled data has a size of 21560
+Training time 0:01:26
+
+| Test Epoch #37	 Accuracy: 85.25%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:28394   AUC:0.966
+
+labeled data has a size of 28394
+already save noisy label file.
+unlabeled data has a size of 21606
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:28669   AUC:0.966
+
+labeled data has a size of 28669
+already save noisy label file.
+unlabeled data has a size of 21331
+Training time 0:01:25
+
+| Test Epoch #38	 Accuracy: 85.99%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:28771   AUC:0.969
+
+labeled data has a size of 28771
+already save noisy label file.
+unlabeled data has a size of 21229
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:28602   AUC:0.968
+
+labeled data has a size of 28602
+already save noisy label file.
+unlabeled data has a size of 21398
+Training time 0:01:28
+
+| Test Epoch #39	 Accuracy: 86.22%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:28594   AUC:0.970
+
+labeled data has a size of 28594
+already save noisy label file.
+unlabeled data has a size of 21406
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:28799   AUC:0.969
+
+labeled data has a size of 28799
+already save noisy label file.
+unlabeled data has a size of 21201
+Training time 0:01:27
+
+| Test Epoch #40	 Accuracy: 86.61%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:28823   AUC:0.972
+
+labeled data has a size of 28823
+already save noisy label file.
+unlabeled data has a size of 21177
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:28485   AUC:0.969
+
+labeled data has a size of 28485
+already save noisy label file.
+unlabeled data has a size of 21515
+Training time 0:01:27
+
+| Test Epoch #41	 Accuracy: 87.45%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:28763   AUC:0.973
+
+labeled data has a size of 28763
+already save noisy label file.
+unlabeled data has a size of 21237
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:28848   AUC:0.972
+
+labeled data has a size of 28848
+already save noisy label file.
+unlabeled data has a size of 21152
+Training time 0:01:26
+
+| Test Epoch #42	 Accuracy: 87.34%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:28797   AUC:0.973
+
+labeled data has a size of 28797
+already save noisy label file.
+unlabeled data has a size of 21203
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:28523   AUC:0.972
+
+labeled data has a size of 28523
+already save noisy label file.
+unlabeled data has a size of 21477
+Training time 0:01:28
+
+| Test Epoch #43	 Accuracy: 87.59%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:28732   AUC:0.974
+
+labeled data has a size of 28732
+already save noisy label file.
+unlabeled data has a size of 21268
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:28816   AUC:0.971
+
+labeled data has a size of 28816
+already save noisy label file.
+unlabeled data has a size of 21184
+Training time 0:01:28
+
+| Test Epoch #44	 Accuracy: 87.99%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:28880   AUC:0.976
+
+labeled data has a size of 28880
+already save noisy label file.
+unlabeled data has a size of 21120
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:28804   AUC:0.976
+
+labeled data has a size of 28804
+already save noisy label file.
+unlabeled data has a size of 21196
+Training time 0:01:29
+
+| Test Epoch #45	 Accuracy: 87.65%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29032   AUC:0.974
+
+labeled data has a size of 29032
+already save noisy label file.
+unlabeled data has a size of 20968
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:28984   AUC:0.972
+
+labeled data has a size of 28984
+already save noisy label file.
+unlabeled data has a size of 21016
+Training time 0:01:27
+
+| Test Epoch #46	 Accuracy: 88.04%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29184   AUC:0.974
+
+labeled data has a size of 29184
+already save noisy label file.
+unlabeled data has a size of 20816
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29280   AUC:0.974
+
+labeled data has a size of 29280
+already save noisy label file.
+unlabeled data has a size of 20720
+Training time 0:01:26
+
+| Test Epoch #47	 Accuracy: 87.78%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29405   AUC:0.975
+
+labeled data has a size of 29405
+already save noisy label file.
+unlabeled data has a size of 20595
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29044   AUC:0.975
+
+labeled data has a size of 29044
+already save noisy label file.
+unlabeled data has a size of 20956
+Training time 0:01:30
+
+| Test Epoch #48	 Accuracy: 88.05%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29099   AUC:0.976
+
+labeled data has a size of 29099
+already save noisy label file.
+unlabeled data has a size of 20901
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29242   AUC:0.974
+
+labeled data has a size of 29242
+already save noisy label file.
+unlabeled data has a size of 20758
+Training time 0:01:29
+
+| Test Epoch #49	 Accuracy: 88.64%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29386   AUC:0.973
+
+labeled data has a size of 29386
+already save noisy label file.
+unlabeled data has a size of 20614
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29240   AUC:0.976
+
+labeled data has a size of 29240
+already save noisy label file.
+unlabeled data has a size of 20760
+Training time 0:01:29
+
+| Test Epoch #50	 Accuracy: 87.99%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29341   AUC:0.974
+
+labeled data has a size of 29341
+already save noisy label file.
+unlabeled data has a size of 20659
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29307   AUC:0.975
+
+labeled data has a size of 29307
+already save noisy label file.
+unlabeled data has a size of 20693
+Training time 0:01:31
+
+| Test Epoch #51	 Accuracy: 88.12%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29385   AUC:0.973
+
+labeled data has a size of 29385
+already save noisy label file.
+unlabeled data has a size of 20615
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29288   AUC:0.975
+
+labeled data has a size of 29288
+already save noisy label file.
+unlabeled data has a size of 20712
+Training time 0:01:29
+
+| Test Epoch #52	 Accuracy: 88.16%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29290   AUC:0.974
+
+labeled data has a size of 29290
+already save noisy label file.
+unlabeled data has a size of 20710
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29252   AUC:0.975
+
+labeled data has a size of 29252
+already save noisy label file.
+unlabeled data has a size of 20748
+Training time 0:01:30
+
+| Test Epoch #53	 Accuracy: 88.27%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29422   AUC:0.974
+
+labeled data has a size of 29422
+already save noisy label file.
+unlabeled data has a size of 20578
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29313   AUC:0.974
+
+labeled data has a size of 29313
+already save noisy label file.
+unlabeled data has a size of 20687
+Training time 0:01:29
+
+| Test Epoch #54	 Accuracy: 88.69%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29508   AUC:0.974
+
+labeled data has a size of 29508
+already save noisy label file.
+unlabeled data has a size of 20492
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29385   AUC:0.977
+
+labeled data has a size of 29385
+already save noisy label file.
+unlabeled data has a size of 20615
+Training time 0:01:27
+
+| Test Epoch #55	 Accuracy: 88.57%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29421   AUC:0.977
+
+labeled data has a size of 29421
+already save noisy label file.
+unlabeled data has a size of 20579
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29415   AUC:0.974
+
+labeled data has a size of 29415
+already save noisy label file.
+unlabeled data has a size of 20585
+Training time 0:01:28
+
+| Test Epoch #56	 Accuracy: 89.26%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29550   AUC:0.979
+
+labeled data has a size of 29550
+already save noisy label file.
+unlabeled data has a size of 20450
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29404   AUC:0.978
+
+labeled data has a size of 29404
+already save noisy label file.
+unlabeled data has a size of 20596
+Training time 0:01:30
+
+| Test Epoch #57	 Accuracy: 88.92%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29658   AUC:0.978
+
+labeled data has a size of 29658
+already save noisy label file.
+unlabeled data has a size of 20342
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29498   AUC:0.977
+
+labeled data has a size of 29498
+already save noisy label file.
+unlabeled data has a size of 20502
+Training time 0:01:30
+
+| Test Epoch #58	 Accuracy: 89.60%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29543   AUC:0.979
+
+labeled data has a size of 29543
+already save noisy label file.
+unlabeled data has a size of 20457
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29510   AUC:0.980
+
+labeled data has a size of 29510
+already save noisy label file.
+unlabeled data has a size of 20490
+Training time 0:01:31
+
+| Test Epoch #59	 Accuracy: 89.54%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29609   AUC:0.977
+
+labeled data has a size of 29609
+already save noisy label file.
+unlabeled data has a size of 20391
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29508   AUC:0.977
+
+labeled data has a size of 29508
+already save noisy label file.
+unlabeled data has a size of 20492
+Training time 0:01:32
+
+| Test Epoch #60	 Accuracy: 89.65%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29643   AUC:0.978
+
+labeled data has a size of 29643
+already save noisy label file.
+unlabeled data has a size of 20357
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29755   AUC:0.977
+
+labeled data has a size of 29755
+already save noisy label file.
+unlabeled data has a size of 20245
+Training time 0:01:33
+
+| Test Epoch #61	 Accuracy: 89.81%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29743   AUC:0.980
+
+labeled data has a size of 29743
+already save noisy label file.
+unlabeled data has a size of 20257
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29768   AUC:0.978
+
+labeled data has a size of 29768
+already save noisy label file.
+unlabeled data has a size of 20232
+Training time 0:01:34
+
+| Test Epoch #62	 Accuracy: 90.01%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29719   AUC:0.976
+
+labeled data has a size of 29719
+already save noisy label file.
+unlabeled data has a size of 20281
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29616   AUC:0.978
+
+labeled data has a size of 29616
+already save noisy label file.
+unlabeled data has a size of 20384
+Training time 0:01:32
+
+| Test Epoch #63	 Accuracy: 89.54%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29766   AUC:0.976
+
+labeled data has a size of 29766
+already save noisy label file.
+unlabeled data has a size of 20234
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29768   AUC:0.978
+
+labeled data has a size of 29768
+already save noisy label file.
+unlabeled data has a size of 20232
+Training time 0:01:31
+
+| Test Epoch #64	 Accuracy: 90.05%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29770   AUC:0.979
+
+labeled data has a size of 29770
+already save noisy label file.
+unlabeled data has a size of 20230
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29653   AUC:0.978
+
+labeled data has a size of 29653
+already save noisy label file.
+unlabeled data has a size of 20347
+Training time 0:01:32
+
+| Test Epoch #65	 Accuracy: 89.26%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29713   AUC:0.976
+
+labeled data has a size of 29713
+already save noisy label file.
+unlabeled data has a size of 20287
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29700   AUC:0.976
+
+labeled data has a size of 29700
+already save noisy label file.
+unlabeled data has a size of 20300
+Training time 0:01:32
+
+| Test Epoch #66	 Accuracy: 89.51%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29965   AUC:0.975
+
+labeled data has a size of 29965
+already save noisy label file.
+unlabeled data has a size of 20035
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29677   AUC:0.976
+
+labeled data has a size of 29677
+already save noisy label file.
+unlabeled data has a size of 20323
+Training time 0:01:32
+
+| Test Epoch #67	 Accuracy: 89.35%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29776   AUC:0.974
+
+labeled data has a size of 29776
+already save noisy label file.
+unlabeled data has a size of 20224
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29864   AUC:0.977
+
+labeled data has a size of 29864
+already save noisy label file.
+unlabeled data has a size of 20136
+Training time 0:01:31
+
+| Test Epoch #68	 Accuracy: 90.00%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29870   AUC:0.976
+
+labeled data has a size of 29870
+already save noisy label file.
+unlabeled data has a size of 20130
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29876   AUC:0.977
+
+labeled data has a size of 29876
+already save noisy label file.
+unlabeled data has a size of 20124
+Training time 0:01:35
+
+| Test Epoch #69	 Accuracy: 90.15%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29715   AUC:0.978
+
+labeled data has a size of 29715
+already save noisy label file.
+unlabeled data has a size of 20285
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29872   AUC:0.979
+
+labeled data has a size of 29872
+already save noisy label file.
+unlabeled data has a size of 20128
+Training time 0:01:33
+
+| Test Epoch #70	 Accuracy: 89.77%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29849   AUC:0.978
+
+labeled data has a size of 29849
+already save noisy label file.
+unlabeled data has a size of 20151
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29885   AUC:0.976
+
+labeled data has a size of 29885
+already save noisy label file.
+unlabeled data has a size of 20115
+Training time 0:01:36
+
+| Test Epoch #71	 Accuracy: 90.18%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29878   AUC:0.974
+
+labeled data has a size of 29878
+already save noisy label file.
+unlabeled data has a size of 20122
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29895   AUC:0.980
+
+labeled data has a size of 29895
+already save noisy label file.
+unlabeled data has a size of 20105
+Training time 0:01:36
+
+| Test Epoch #72	 Accuracy: 89.93%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29908   AUC:0.979
+
+labeled data has a size of 29908
+already save noisy label file.
+unlabeled data has a size of 20092
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29905   AUC:0.976
+
+labeled data has a size of 29905
+already save noisy label file.
+unlabeled data has a size of 20095
+Training time 0:01:32
+
+| Test Epoch #73	 Accuracy: 89.61%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29881   AUC:0.974
+
+labeled data has a size of 29881
+already save noisy label file.
+unlabeled data has a size of 20119
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29938   AUC:0.975
+
+labeled data has a size of 29938
+already save noisy label file.
+unlabeled data has a size of 20062
+Training time 0:01:34
+
+| Test Epoch #74	 Accuracy: 90.08%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29870   AUC:0.981
+
+labeled data has a size of 29870
+already save noisy label file.
+unlabeled data has a size of 20130
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29926   AUC:0.974
+
+labeled data has a size of 29926
+already save noisy label file.
+unlabeled data has a size of 20074
+Training time 0:01:33
+
+| Test Epoch #75	 Accuracy: 90.33%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29991   AUC:0.978
+
+labeled data has a size of 29991
+already save noisy label file.
+unlabeled data has a size of 20009
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29971   AUC:0.978
+
+labeled data has a size of 29971
+already save noisy label file.
+unlabeled data has a size of 20029
+Training time 0:01:34
+
+| Test Epoch #76	 Accuracy: 89.98%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:30056   AUC:0.978
+
+labeled data has a size of 30056
+already save noisy label file.
+unlabeled data has a size of 19944
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29998   AUC:0.975
+
+labeled data has a size of 29998
+already save noisy label file.
+unlabeled data has a size of 20002
+Training time 0:01:34
+
+| Test Epoch #77	 Accuracy: 90.19%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:30006   AUC:0.976
+
+labeled data has a size of 30006
+already save noisy label file.
+unlabeled data has a size of 19994
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:30003   AUC:0.977
+
+labeled data has a size of 30003
+already save noisy label file.
+unlabeled data has a size of 19997
+Training time 0:01:36
+
+| Test Epoch #78	 Accuracy: 90.50%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29964   AUC:0.979
+
+labeled data has a size of 29964
+already save noisy label file.
+unlabeled data has a size of 20036
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29982   AUC:0.978
+
+labeled data has a size of 29982
+already save noisy label file.
+unlabeled data has a size of 20018
+Training time 0:01:35
+
+| Test Epoch #79	 Accuracy: 90.05%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:29955   AUC:0.978
+
+labeled data has a size of 29955
+already save noisy label file.
+unlabeled data has a size of 20045
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:29982   AUC:0.978
+
+labeled data has a size of 29982
+already save noisy label file.
+unlabeled data has a size of 20018
+Training time 0:01:36
+
+| Test Epoch #80	 Accuracy: 90.90%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:30223   AUC:0.981
+
+labeled data has a size of 30223
+already save noisy label file.
+unlabeled data has a size of 19777
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:30204   AUC:0.979
+
+labeled data has a size of 30204
+already save noisy label file.
+unlabeled data has a size of 19796
+Training time 0:01:38
+
+| Test Epoch #81	 Accuracy: 90.82%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:30282   AUC:0.980
+
+labeled data has a size of 30282
+already save noisy label file.
+unlabeled data has a size of 19718
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:30154   AUC:0.978
+
+labeled data has a size of 30154
+already save noisy label file.
+unlabeled data has a size of 19846
+Training time 0:01:36
+
+| Test Epoch #82	 Accuracy: 90.83%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Train Net1
+already save noisy label file.
+Numer of labeled samples:30238   AUC:0.980
+
+labeled data has a size of 30238
+already save noisy label file.
+unlabeled data has a size of 19762
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:30211   AUC:0.977
+
+labeled data has a size of 30211
+already save noisy label file.
+unlabeled data has a size of 19789
+Training time 0:01:35

@@ -1,0 +1,287 @@
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+already save noisy label file.
+already save noisy label file.
+| Building net
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #0	 Accuracy: 36.33%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #1	 Accuracy: 46.40%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #2	 Accuracy: 50.88%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #3	 Accuracy: 55.03%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #4	 Accuracy: 59.06%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #5	 Accuracy: 61.36%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #6	 Accuracy: 62.43%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #7	 Accuracy: 66.33%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #8	 Accuracy: 66.09%
+
+already save noisy label file.
+already save noisy label file.
+Warmup Net1
+
+Warmup Net2
+
+| Test Epoch #9	 Accuracy: 70.30%
+
+already save noisy label file.
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchnet/meter/aucmeter.py:28: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  self.scores = torch.DoubleTensor(torch.DoubleStorage()).numpy()
+Train Net1
+already save noisy label file.
+Numer of labeled samples:34710   AUC:0.866
+
+labeled data has a size of 34710
+already save noisy label file.
+unlabeled data has a size of 15290
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:49212   AUC:0.877
+
+labeled data has a size of 49212
+already save noisy label file.
+unlabeled data has a size of 788
+Training time 0:16:33
+Ensemble ACC1: {10: 4.583592367172241, 'acc_5': 0.3097, 'acc_1': 0.3097} 
+Ensemble ACC2: {10: 4.621319961547852, 'acc_5': 0.1263, 'acc_1': 0.1263} 
+ Double Ensemble: 0.2808
+
+| Test Epoch #10	 Accuracy: 28.08%
+
+already save noisy label file.
+Train Net1
+already save noisy label file.
+Numer of labeled samples:38899   AUC:0.483
+
+labeled data has a size of 38899
+already save noisy label file.
+unlabeled data has a size of 11101
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:25368   AUC:0.670
+
+labeled data has a size of 25368
+already save noisy label file.
+unlabeled data has a size of 24632
+Training time 0:12:35
+Ensemble ACC1: {10: 4.583592367172241, 11: 4.596532392501831, 'acc_5': 0.2974, 'acc_1': 0.3097} 
+Ensemble ACC2: {10: 4.621319961547852, 11: 4.634806299209595, 'acc_5': 0.1924, 'acc_1': 0.1263} 
+ Double Ensemble: 0.2689
+
+| Test Epoch #11	 Accuracy: 24.15%
+
+already save noisy label file.
+Train Net1
+already save noisy label file.
+Numer of labeled samples:39124   AUC:0.582
+
+labeled data has a size of 39124
+already save noisy label file.
+unlabeled data has a size of 10876
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:31158   AUC:0.551
+
+labeled data has a size of 31158
+already save noisy label file.
+unlabeled data has a size of 18842
+Training time 0:13:46
+Ensemble ACC1: {12: 4.5764960765838625, 10: 4.583592367172241, 11: 4.596532392501831, 'acc_5': 0.3263, 'acc_1': 0.3373} 
+Ensemble ACC2: {12: 4.598063659667969, 10: 4.621319961547852, 11: 4.634806299209595, 'acc_5': 0.1637, 'acc_1': 0.1596} 
+ Double Ensemble: 0.29
+
+| Test Epoch #12	 Accuracy: 27.52%
+
+already save noisy label file.
+Train Net1
+already save noisy label file.
+Numer of labeled samples:32755   AUC:0.516
+
+labeled data has a size of 32755
+already save noisy label file.
+unlabeled data has a size of 17245
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:39348   AUC:0.657
+
+labeled data has a size of 39348
+already save noisy label file.
+unlabeled data has a size of 10652
+Training time 0:13:59
+Ensemble ACC1: {13: 4.503501605987549, 12: 4.5764960765838625, 10: 4.583592367172241, 11: 4.596532392501831, 'acc_5': 0.3821, 'acc_1': 0.4236} 
+Ensemble ACC2: {12: 4.598063659667969, 13: 4.620458364486694, 10: 4.621319961547852, 11: 4.634806299209595, 'acc_5': 0.2032, 'acc_1': 0.1596} 
+ Double Ensemble: 0.3585
+
+| Test Epoch #13	 Accuracy: 41.87%
+
+already save noisy label file.
+Train Net1
+already save noisy label file.
+Numer of labeled samples:42759   AUC:0.602
+
+labeled data has a size of 42759
+already save noisy label file.
+unlabeled data has a size of 7241
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:34491   AUC:0.650
+
+labeled data has a size of 34491
+already save noisy label file.
+unlabeled data has a size of 15509
+Training time 0:15:05
+Ensemble ACC1: {13: 4.503501605987549, 14: 4.5118872165679935, 12: 4.5764960765838625, 10: 4.583592367172241, 11: 4.596532392501831, 'acc_5': 0.4567, 'acc_1': 0.4236} 
+Ensemble ACC2: {14: 4.516966056823731, 12: 4.598063659667969, 13: 4.620458364486694, 10: 4.621319961547852, 11: 4.634806299209595, 'acc_5': 0.2442, 'acc_1': 0.2424} 
+ Double Ensemble: 0.4496
+
+| Test Epoch #14	 Accuracy: 47.53%
+
+already save noisy label file.
+Train Net1
+already save noisy label file.
+Numer of labeled samples:36506   AUC:0.581
+
+labeled data has a size of 36506
+already save noisy label file.
+unlabeled data has a size of 13494
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:35011   AUC:0.763
+
+labeled data has a size of 35011
+already save noisy label file.
+unlabeled data has a size of 14989
+Training time 0:13:52
+Ensemble ACC1: {15: 4.475155210494995, 13: 4.503501605987549, 14: 4.5118872165679935, 12: 4.5764960765838625, 10: 4.583592367172241, 'acc_5': 0.5024, 'acc_1': 0.4826} 
+Ensemble ACC2: {14: 4.516966056823731, 15: 4.553247737884521, 12: 4.598063659667969, 13: 4.620458364486694, 10: 4.621319961547852, 'acc_5': 0.2935, 'acc_1': 0.2424} 
+ Double Ensemble: 0.4867
+
+| Test Epoch #15	 Accuracy: 49.18%
+
+already save noisy label file.
+Train Net1
+already save noisy label file.
+Numer of labeled samples:36280   AUC:0.671
+
+labeled data has a size of 36280
+already save noisy label file.
+unlabeled data has a size of 13720
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:36627   AUC:0.680
+
+labeled data has a size of 36627
+already save noisy label file.
+unlabeled data has a size of 13373
+Training time 0:14:20
+Ensemble ACC1: {16: 4.462110185623169, 15: 4.475155210494995, 13: 4.503501605987549, 14: 4.5118872165679935, 12: 4.5764960765838625, 'acc_5': 0.5718, 'acc_1': 0.6251} 
+Ensemble ACC2: {14: 4.516966056823731, 16: 4.523804235458374, 15: 4.553247737884521, 12: 4.598063659667969, 13: 4.620458364486694, 'acc_5': 0.3187, 'acc_1': 0.2424} 
+ Double Ensemble: 0.5652
+
+| Test Epoch #16	 Accuracy: 56.73%
+
+already save noisy label file.
+Train Net1
+already save noisy label file.
+Numer of labeled samples:43685   AUC:0.634
+
+labeled data has a size of 43685
+already save noisy label file.
+unlabeled data has a size of 6315
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:34488   AUC:0.815
+
+labeled data has a size of 34488
+already save noisy label file.
+unlabeled data has a size of 15512
+Training time 0:15:12
+Ensemble ACC1: {17: 4.443515491485596, 16: 4.462110185623169, 15: 4.475155210494995, 13: 4.503501605987549, 14: 4.5118872165679935, 'acc_5': 0.6011, 'acc_1': 0.5819} 
+Ensemble ACC2: {14: 4.516966056823731, 16: 4.523804235458374, 15: 4.553247737884521, 17: 4.586618137359619, 12: 4.598063659667969, 'acc_5': 0.3622, 'acc_1': 0.2424} 
+ Double Ensemble: 0.6011
+
+| Test Epoch #17	 Accuracy: 54.33%
+
+already save noisy label file.
+Train Net1
+already save noisy label file.
+Numer of labeled samples:34570   AUC:0.710
+
+labeled data has a size of 34570
+already save noisy label file.
+unlabeled data has a size of 15430
+
+Train Net2
+already save noisy label file.
+Numer of labeled samples:38151   AUC:0.778
+
+labeled data has a size of 38151
+already save noisy label file.
+unlabeled data has a size of 11849

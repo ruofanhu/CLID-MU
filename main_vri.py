@@ -54,11 +54,8 @@ parser.add_argument('--alpha', default=0.2, type=float, help='parameter for Beta
 parser.add_argument('--tau', default=0.1, type=float, help='tau for clid loss')
 parser.add_argument('--eval_iter', default=250, type=int, help='evaluation every n iterations')
 parser.add_argument('--meta_goal', type=str, default='ce',help='ce,ce_sloss, mae_sloss,clid,ce_noisy')
-parser.add_argument('--data_root', type=str, default='/home/rhu/r_work/higher_semilearn/data',help='data folder')
+parser.add_argument('--data_root', type=str, default='data',help='data folder')
 parser.add_argument('--Tmax', type=int, default=10,help='cosine period')
-parser.add_argument('--w_cov', default=0.0, type=float, help='weight for cov loss')
-parser.add_argument('--w_svd', default=0.0, type=float, help='weight for svd loss')
-parser.add_argument('--w_nege', default=1, type=float, help='weight for svd loss')
 parser.add_argument('--gamma', type=int, default=1,help='imbalance ratio for dataset')
 parser.add_argument('--mode', type=str, default='eval_encoder',help='evaluate the quality of representation')
 parser.set_defaults(augment=True)
@@ -118,8 +115,6 @@ def build_dataset(root, args):
 
 
         test_data = CIFAR10(device,root=root, train=False, transform=test_transform, download=True, normalize=normalize)
-        # if args.gamma>1:
-        #     train_data = get_imbalanced_dataset(train_data,5000, num_classes=10, gamma=args.gamma)
         
         train_data, train_data_meta = split_meta_train(train_data,args.num_meta,args.meta_goal,num_classes=10)
 
@@ -129,10 +124,7 @@ def build_dataset(root, args):
             root=root, train=True, meta=False, num_meta=args.num_meta, corruption_prob=args.corruption_prob,
             corruption_type=args.corruption_type, transform=strong_transform, download=True, seed=args.seed,
                               strong_t=strong_transform, normalize=normalize)
-        # train_data = CIFAR100(device,
-        #     root=root, train=True, meta=False, num_meta=args.num_meta, corruption_prob=args.corruption_prob,
-        #     corruption_type=args.corruption_type, transform=strong_transform, download=True, seed=args.seed,
-        #                       strong_t=strong_transform, normalize=normalize)
+    
         test_data = CIFAR100(device,root=root, train=False, transform=test_transform, download=True, normalize=normalize)
         if args.gamma>1:
             train_data = get_imbalanced_dataset(train_data,500, num_classes=100, gamma=args.gamma)
@@ -158,9 +150,7 @@ def build_classifier(args):
 
     else:    
         cnn = ResNet18(args.dataset == 'cifar10' and 10 or 100)
-    # else:
-    #     # cnn = ResNet32(args.dataset == 'cifar10' and 10 or 100)
-    #     cnn = ResNet32(args.dataset == 'cifar10' and 10 or 100)
+
 
     if torch.cuda.is_available():
         cnn.cuda()
@@ -201,11 +191,7 @@ def linear_eval_with_vnet(args,train_loader,test_loader,meta_loader,epochs,file_
     best_acc=0
     best_eval_acc=0
     best_train_loss=100
-    # if args.corruption_type =='flip':
-    #     vnet = vri(128, 1024, 512, num_classes).cuda()
-    #     model = ResNet32(args.dataset == 'cifar10' and 10 or 100)
 
-    # else:
     vnet = vri(576, 1024, 512, num_classes).cuda()
     model = ResNet18(args.dataset == 'cifar10' and 10 or 100)
 
@@ -337,44 +323,21 @@ def train(train_loader, train_meta_loader, model, vnet, optimizer_model, optimiz
             inputs_val, inputs_val_s1,inputs_val_s2, targets_val, _, targets_val_true = next(train_meta_loader_iter)
         inputs_val, targets_val,targets_val_true = inputs_val.cuda(), targets_val.cuda(),targets_val_true.cuda()  # [500,3,32,32], [500]
         inputs_val_s1,inputs_val_s2=inputs_val_s1.cuda(),inputs_val_s2.cuda()
-        if args.meta_goal!='clid_p' and args.meta_goal!='clid_s':
-            y_g_hat, feat_val = meta_model(inputs_val)
-            prec_train = accuracy(y_g_hat.data, targets_val.data, topk=(1,))[0]
-            acc_meta += prec_train
-            if args.meta_goal=='ce':
-                l_g_meta = F.cross_entropy(y_g_hat,targets_val_true.long())
-            if args.meta_goal=='ce_sloss' or args.meta_goal=='ce_noisy':
-                l_g_meta = F.cross_entropy(y_g_hat,targets_val.long())
-    
-            elif args.meta_goal=='mae' or args.meta_goal=='mae_sloss':
-                l_g_meta = mae_loss(y_g_hat, targets_val.long())
-            ### Apply clid_loss
-            elif args.meta_goal=='clid':
-                l_g_meta = clid_loss(feat_val,y_g_hat,args.tau)
-                # if args.w_svd>0:
-                #     l_g_meta+= args.w_svd*svd_loss(feat_val)
-                # if args.w_cov>0:
-                #     l_g_meta+=args.w_cov*cov_loss(feat_val)
-                # if args.w_nege>0:
-                #     l_g_meta+=args.w_nege*neg_entropy(y_g_hat)
-            elif args.meta_goal=='clid_1':
-                l_g_meta = clid_loss_1(feat_val,y_g_hat,args.tau)
+        y_g_hat, feat_val = meta_model(inputs_val)
+        prec_train = accuracy(y_g_hat.data, targets_val.data, topk=(1,))[0]
+        acc_meta += prec_train
+        if args.meta_goal=='ce':
+            l_g_meta = F.cross_entropy(y_g_hat,targets_val_true.long())
+        if args.meta_goal=='ce_sloss' or args.meta_goal=='ce_noisy':
+            l_g_meta = F.cross_entropy(y_g_hat,targets_val.long())
 
-        elif args.meta_goal=='clid_p':
-            combined_input = torch.cat([inputs_val, inputs_val_s1,inputs_val_s2], dim=0)
-            combined_y_g_hat, combined_feat = meta_model(combined_input)
-            s=inputs_val.shape[0]
-            y_g_hat, _,_ = torch.split(combined_y_g_hat, [s, s, s], dim=0)
-            feat_val, feat_val_s1,feat_val_s2 = torch.split(combined_feat, [s, s, s], dim=0)
-            l_g_meta = clid_loss_p(feat_val_s1,feat_val_s2,y_g_hat,args.tau)
-        elif args.meta_goal=='clid_s':
-            combined_input = torch.cat([inputs_val, inputs_val_s1], dim=0)
-            combined_y_g_hat, combined_feat = meta_model(combined_input)
-            # s=inputs_val.shape[0]
-            # y_g_hat, y_g_hat_s1,y_g_hat_s2 = torch.split(combined_y_g_hat, [s, s, s], dim=0)
-            # feat_val, feat_val_s1,feat_val_s2 = torch.split(combined_feat, [s, s, s], dim=0)
-            # l_g_meta = clid_loss_s(feat_val,feat_val_s1,y_g_hat_s1,args.tau)
-            l_g_meta = clid_loss(combined_feat,combined_y_g_hat,args.tau)
+        elif args.meta_goal=='mae' or args.meta_goal=='mae_sloss':
+            l_g_meta = mae_loss(y_g_hat, targets_val.long())
+        ### Apply clid_loss
+        elif args.meta_goal=='clid':
+            l_g_meta = clid_loss(feat_val,y_g_hat,args.tau)
+
+            
         # update vnet params
 
         optimizer_vnet.zero_grad()
@@ -394,11 +357,7 @@ def train(train_loader, train_meta_loader, model, vnet, optimizer_model, optimiz
 
             
         loss = loss_function(w_new*outputs, targets_onehot)
-        # if args.w_svd>0:
-        #     loss+= args.w_svd*svd_loss(feat)
-        # if args.w_cov>0:
-        #     loss+=args.w_cov*cov_loss(feat)
-        # update model params
+
         optimizer_model.zero_grad()
         loss.backward()
         optimizer_model.step()
@@ -414,9 +373,7 @@ def build_training(args):
     model = build_classifier(args).cuda()
     ema_model = EMA(model, 0.999)
     ema_model.register()
-    # if args.corruption_type =='flip':
-    #     vnet = vri(128, 1024, 512, num_classes).cuda()
-    # else:
+
     vnet = vri(576, 1024, 512, num_classes).cuda()
     optimizer_model = torch.optim.SGD(model.params(), args.lr, momentum=args.momentum, weight_decay=args.weight_decay)
     sch_lr = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer_model, T_max=args.Tmax, eta_min=1e-3)
@@ -471,8 +428,8 @@ def main(args,mytxt):
     best_checkpoints = {}
     best_checkpoints_accu = {}
     best_ema_acc =0    
-    filepath = f'vri_res18_{args.meta_goal}-{args.dataset}_{args.corruption_type}_{args.corruption_prob}_{args.Tmax}_{args.w_svd}_{args.w_cov}_{args.w_nege}_lr_{args.lr}_meta_lr_{args.meta_lr}_es_{args.meta_bsz}_tau{args.tau}_gamma{args.gamma}_seed{args.seed}.pt'
-    filepath_v = f'vri_vnet_{args.meta_goal}{args.dataset}_{args.corruption_type}_{args.corruption_prob}_{args.Tmax}_{args.w_svd}_{args.w_cov}_{args.w_nege}_lr_{args.lr}_meta_lr_{args.meta_lr}_es_{args.meta_bsz}_tau{args.tau}_gamma{args.gamma}_seed{args.seed}.pt'
+    filepath = f'vri_res18_{args.meta_goal}-{args.dataset}_{args.corruption_type}_{args.corruption_prob}_{args.Tmax}_lr_{args.lr}_meta_lr_{args.meta_lr}_es_{args.meta_bsz}_tau{args.tau}_gamma{args.gamma}_seed{args.seed}.pt'
+    filepath_v = f'vri_vnet_{args.meta_goal}{args.dataset}_{args.corruption_type}_{args.corruption_prob}_{args.Tma}_lr_{args.lr}_meta_lr_{args.meta_lr}_es_{args.meta_bsz}_tau{args.tau}_gamma{args.gamma}_seed{args.seed}.pt'
     ## warm up
     if args.meta_goal=='ce_sloss' or args.meta_goal=='mae_sloss':
         for epoch in range(args.warmup_epochs):
@@ -497,32 +454,7 @@ def main(args,mytxt):
         meta_clid_results,best_checkpoints = update_best_results_dict(best_checkpoints,meta_clid, test_outputs,epoch, targets,max_size=5)
         meta_clid_results_accu,best_checkpoints_accu = update_best_results_dict(best_checkpoints_accu,meta_loss, test_outputs,epoch, targets,max_size=5)
         
-        # ema_model.apply_shadow()
-        # test_ema_acc, _,_ = test(model_2, test_loader=test_loader)
-        # ema_model.restore()
-        
-        # if test_ema_acc > best_ema_acc:
-        #     best_ema_acc = test_ema_acc
-        
-        # if test_acc >= best_acc:
-        #     best_acc = test_acc
-        #     test_acc_pth=f'./checkpoint/test_acc_{filepath}'
-        #     test_acc_pth_v=f'./checkpoint/test_acc_{filepath_v}'
-        #     torch.save(model_2.state_dict(),test_acc_pth)
-        #     torch.save(vnet_2.state_dict(),test_acc_pth_v)
-        # if acc_train>best_acc_train:
-        #     best_acc_train=acc_train
-        #     train_acc_pth=f'./checkpoint/train_acc_{filepath}'
-        #     train_acc_pth_v=f'./checkpoint/train_acc_{filepath_v}'
-        #     torch.save(model_2.state_dict(),train_acc_pth)
-        #     torch.save(vnet_2.state_dict(),train_acc_pth_v)
-
-        # if meta_clid<best_meta_loss:
-        #     best_meta_loss=meta_clid
-        #     meta_loss_pth=f'./checkpoint/meta_loss_{filepath}'
-        #     meta_loss_pth_v=f'./checkpoint/meta_loss_{filepath_v}'
-        #     torch.save(model_2.state_dict(),meta_loss_pth)
-        #     torch.save(vnet_2.state_dict(),meta_loss_pth_v)         
+               
         sch_lr_2.step()
         if args.meta_goal=='ce_sloss' or args.meta_goal=='mae_sloss':
             noise_ratio, meta_set = eval_train(model_2, train_meta_loader_2)
@@ -547,45 +479,16 @@ def main(args,mytxt):
     print('best_acc: ', best_acc,'best_ema_acc: ', best_ema_acc)
     print('best_acc: ', best_acc,'best_ema_acc: ', best_ema_acc, file=mytxt)
             
-    # testacc_best_acc_vnet, testacc_best_eval_acc_vnet=linear_eval_with_vnet(args,train_loader_2,test_loader,train_meta_loader_2,50,test_acc_pth,test_acc_pth_v,mytxt,withvet=True)
-    # trainacc_best_acc_vnet, trainacc_best_eval_acc_vnet=linear_eval_with_vnet(args,train_loader_2,test_loader,train_meta_loader_2,50,train_acc_pth,train_acc_pth_v,mytxt,withvet=True)    
-    # metaloss_best_acc_vnet, metaloss_best_eval_acc_vnet=linear_eval_with_vnet(args,train_loader_2,test_loader,train_meta_loader_2,50,meta_loss_pth,meta_loss_pth_v,mytxt,withvet=True)    
-
-    # _testacc_best_acc_vnet, _testacc_best_eval_acc_vnet=linear_eval_with_vnet(args,train_loader_2,test_loader,train_meta_loader_2,50,test_acc_pth,test_acc_pth_v,mytxt,withvet=False)
-    # _trainacc_best_acc_vnet, _trainacc_best_eval_acc_vnet=linear_eval_with_vnet(args,train_loader_2,test_loader,train_meta_loader_2,50,train_acc_pth,train_acc_pth_v,mytxt,withvet=False)    
-    # _metaloss_best_acc_vnet, _metaloss_best_eval_acc_vnet=linear_eval_with_vnet(args,train_loader_2,test_loader,train_meta_loader_2,50,meta_loss_pth,meta_loss_pth_v,mytxt,withvet=False)    
-
-    # # best_acc_lp, best_eval_acc_lp =linear_eval_with_vnet(args,train_loader_2,test_loader,train_meta_loader_2,100,filepath,filepath_v,mytxt,withvet=False)    
-    # print('testacc:\n best_acc_vnet:%.4f\t best_eval_acc_vnet:%.4f\t best_acc_lp:%.4f\t best_eval_acc_lp:%.4f\t \n' % (testacc_best_acc_vnet, testacc_best_eval_acc_vnet,_testacc_best_acc_vnet, _testacc_best_eval_acc_vnet))
-    # print('Train ACC:\n best_acc_vnet:%.4f\t best_eval_acc_vnet:%.4f\t best_acc_lp:%.4f\t best_eval_acc_lp:%.4f\t \n' % (trainacc_best_acc_vnet, trainacc_best_eval_acc_vnet,_trainacc_best_acc_vnet, _trainacc_best_eval_acc_vnet))
-    # print('Meta Loss:\n best_acc_vnet:%.4f\t best_eval_acc_vnet:%.4f\t best_acc_lp:%.4f\t best_eval_acc_lp:%.4f\t \n' % (metaloss_best_acc_vnet, metaloss_best_eval_acc_vnet,_metaloss_best_acc_vnet, _metaloss_best_eval_acc_vnet))
-
-    # print('testacc:\n best_acc_vnet:%.4f\t best_eval_acc_vnet:%.4f\t best_acc_lp:%.4f\t best_eval_acc_lp:%.4f\t \n' % (testacc_best_acc_vnet, testacc_best_eval_acc_vnet,_testacc_best_acc_vnet, _testacc_best_eval_acc_vnet),file=mytxt)
-    # print('Train ACC:\n best_acc_vnet:%.4f\t best_eval_acc_vnet:%.4f\t best_acc_lp:%.4f\t best_eval_acc_lp:%.4f\t \n' % (trainacc_best_acc_vnet, trainacc_best_eval_acc_vnet,_trainacc_best_acc_vnet, _trainacc_best_eval_acc_vnet),file=mytxt)
-    # print('Meta Loss:\n best_acc_vnet:%.4f\t best_eval_acc_vnet:%.4f\t best_acc_lp:%.4f\t best_eval_acc_lp:%.4f\t \n' % (metaloss_best_acc_vnet, metaloss_best_eval_acc_vnet,_metaloss_best_acc_vnet, _metaloss_best_eval_acc_vnet),file=mytxt)
-
-    
-    # print('best_acc_vnet:%.4f\t best_eval_acc_vnet:%.4f\t best_acc_lp:%.4f\t best_eval_acc_lp:%.4f\t' % (best_acc_vnet, best_eval_acc_vnet,best_acc_lp, best_eval_acc_lp),file=mytxt)
-
+ 
 
 
 if __name__ == '__main__':
-    save_path_dir = './exp_results_new_/'
+    save_path_dir = './exp_results/'
     if not os.path.exists(save_path_dir):
         os.makedirs(save_path_dir)
     # Configure logging
-    txt_name = f'vri_resnet18_{args.meta_goal}-{args.dataset}_{args.corruption_type}_\
-               {args.corruption_prob}_{args.Tmax}_{args.w_svd}_{args.w_cov}_{args.w_nege}_lr_{args.lr}_meta_lr_{args.meta_lr}_es_{args.meta_bsz}_tau{args.tau}_gamma{args.gamma}_seed{args.seed}'
+    txt_name = f'vri_resnet18_{args.meta_goal}-{args.dataset}_{args.corruption_type}_{args.corruption_prob}_{args.Tmax}_lr_{args.lr}_meta_lr_{args.meta_lr}_es_{args.meta_bsz}_tau{args.tau}_gamma{args.gamma}_seed{args.seed}'
 
-    # txt_name = f'ensemble_single_model-{args.dataset}_{args.corruption_type}_\
-    #            {args.corruption_prob}_lr_{args.lr}_meta_lr_{args.meta_lr}_tau{args.tau}_{datetime.datetime.now().strftime("%Y%m%d-%H%M%S")}'
-    # txt_name = 'single_model-' + args.dataset + '_' + args.corruption_type + '_' \
-    #            + str(args.corruption_prob) + '_' +'lr'+'_'+str(args.lr)+'_'+'meta_lr'+str(args.meta_lr)+'_'+ datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-    # logging.basicConfig(
-    #     filename=f'exp_results/{txt_name}'
-    #     level=logging.INFO, 
-    #     format='%(asctime)s - %(levelname)s - %(message)s')
-    # print(txt_name)
     mytxt = open(save_path_dir + txt_name + '.txt', mode='a', encoding='utf-8')
     print(args) 
     print(args, file=mytxt) 

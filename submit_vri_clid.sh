@@ -23,7 +23,7 @@ for lr in 0.02
 do
 for tau in 0.5
 do
-for dataset in cifar100
+for dataset in cifar100 #cifar10
 do
 for seed in 49
 do
@@ -31,21 +31,9 @@ for meta_bsz in 100
 do
 for meta_goal in clid   #clid 0.01
 do
-for Tmax in 160
+for Tmax in 150
 do
-for w_cov in 0
-do
-for w_svd in 0
-do
-for gamma in 1
-do
-for w_nege in 0
-do
-sbatch run_cifar_vri.sh ${corruption_type} ${corruption_prob} ${meta_lr} ${lr} ${tau} ${dataset} ${seed} ${meta_bsz} ${meta_goal} ${Tmax} ${w_cov} ${w_svd} ${gamma} ${w_nege}
-done
-done
-done
-done
+sbatch run_cifar_vri.sh ${corruption_type} ${corruption_prob} ${meta_lr} ${lr} ${tau} ${dataset} ${seed} ${meta_bsz} ${meta_goal} ${Tmax}
 done
 done
 done

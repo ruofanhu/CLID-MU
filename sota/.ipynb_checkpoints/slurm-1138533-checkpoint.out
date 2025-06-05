@@ -1,0 +1,1225 @@
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Namespace(batch_size=64, lr=0.02, alpha=1.5, lambda_u=50, p_threshold=0, T=0.5, num_epochs=300, id='redmini_vri', data_path='/home/rhu/r_work/VRI/VRI_DivideMix/data/red_mini_imagenet_s32', seed='8', gpuid=0, num_class=100, num_batches=1000, log_wandb=False, wandb_project='', wandb_experiment='', wandb_entity='', wandb_resume=False, need_clean=False, single_meta=0, moco_pretrained=None, warmup=30, cos_lr=False, lam=0.01, meta_goal='clid', tau=0.5, meta_lr=0.01, meta_bsz=100, split='red_noise_nl_0.4')
+| Building net
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 4.98%
+
+| Test	 Net2  Acc: 4.10%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 6.08%
+
+
+==== Test ACC:6.08 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 7.24%
+
+| Test	 Net2  Acc: 6.98%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 9.76%
+
+
+==== Test ACC:9.76 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 10.76%
+
+| Test	 Net2  Acc: 10.50%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 13.98%
+
+
+==== Test ACC:13.98 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 10.50%
+
+| Test	 Net2  Acc: 14.56%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 15.58%
+
+
+==== Test ACC:15.58 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 10.14%
+
+| Test	 Net2  Acc: 12.24%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 15.64%
+
+
+==== Test ACC:15.64 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 12.56%
+
+| Test	 Net2  Acc: 17.84%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 18.64%
+
+
+==== Test ACC:18.64 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 18.34%
+
+| Test	 Net2  Acc: 20.74%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 23.60%
+
+
+==== Test ACC:23.6 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 21.78%
+
+| Test	 Net2  Acc: 19.62%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 26.10%
+
+
+==== Test ACC:26.1 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 24.62%
+
+| Test	 Net2  Acc: 20.80%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 28.88%
+
+
+==== Test ACC:28.88 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 21.04%
+
+| Test	 Net2  Acc: 20.60%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 27.48%
+
+
+==== Test ACC:27.48 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 23.96%
+
+| Test	 Net2  Acc: 26.84%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 32.08%
+
+
+==== Test ACC:32.08 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 25.46%
+
+| Test	 Net2  Acc: 19.66%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 31.28%
+
+
+==== Test ACC:31.28 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 30.80%
+
+| Test	 Net2  Acc: 30.20%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 38.64%
+
+
+==== Test ACC:38.64 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 24.30%
+
+| Test	 Net2  Acc: 30.28%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 35.20%
+
+
+==== Test ACC:35.2 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 24.98%
+
+| Test	 Net2  Acc: 35.52%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 40.82%
+
+
+==== Test ACC:40.82 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 36.36%
+
+| Test	 Net2  Acc: 30.02%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 42.96%
+
+
+==== Test ACC:42.96 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 36.50%
+
+| Test	 Net2  Acc: 30.22%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 42.76%
+
+
+==== Test ACC:42.76 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 27.54%
+
+| Test	 Net2  Acc: 37.74%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 42.04%
+
+
+==== Test ACC:42.04 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 35.90%
+
+| Test	 Net2  Acc: 36.90%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 52.64%
+
+
+==== Test ACC:52.64 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 41.18%
+
+| Test	 Net2  Acc: 36.24%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 52.88%
+
+
+==== Test ACC:52.88 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 40.88%
+
+| Test	 Net2  Acc: 38.32%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 52.96%
+
+
+==== Test ACC:52.96 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 51.14%
+
+| Test	 Net2  Acc: 38.16%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 60.04%
+
+
+==== Test ACC:60.04 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 40.08%
+
+| Test	 Net2  Acc: 43.88%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 58.86%
+
+
+==== Test ACC:58.86 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 50.34%
+
+| Test	 Net2  Acc: 48.86%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 66.16%
+
+
+==== Test ACC:66.16 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 55.20%
+
+| Test	 Net2  Acc: 54.24%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 72.10%
+
+
+==== Test ACC:72.1 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 51.84%
+
+| Test	 Net2  Acc: 58.04%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 73.82%
+
+
+==== Test ACC:73.82 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 45.30%
+
+| Test	 Net2  Acc: 44.84%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 68.98%
+
+
+==== Test ACC:68.98 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 58.78%
+
+| Test	 Net2  Acc: 53.04%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 76.18%
+
+
+==== Test ACC:76.18 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 52.30%
+
+| Test	 Net2  Acc: 52.16%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 75.54%
+
+
+==== Test ACC:75.54 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 51.24%
+
+| Test	 Net2  Acc: 71.18%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 79.96%
+
+
+==== Test ACC:79.96 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3129
+len(data) 5000
+labeled data has a size of 3129
+len(data) 5000
+unlabeled data has a size of 1871
+len(data) 5000
+labeled data has a size of 3253
+len(data) 5000
+labeled data has a size of 3253
+len(data) 5000
+unlabeled data has a size of 1747
+
+Train Net2
+
+| Test	 Net1  Acc: 57.58%
+
+| Test	 Net2  Acc: 59.88%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 68.46%
+
+
+==== Test ACC:68.46 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3076
+len(data) 5000
+labeled data has a size of 3076
+len(data) 5000
+unlabeled data has a size of 1924
+len(data) 5000
+labeled data has a size of 3065
+len(data) 5000
+labeled data has a size of 3065
+len(data) 5000
+unlabeled data has a size of 1935
+
+Train Net2
+
+| Test	 Net1  Acc: 59.58%
+
+| Test	 Net2  Acc: 38.52%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 57.70%
+
+
+==== Test ACC:57.7 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3203
+len(data) 5000
+labeled data has a size of 3203
+len(data) 5000
+unlabeled data has a size of 1797
+len(data) 5000
+labeled data has a size of 3504
+len(data) 5000
+labeled data has a size of 3504
+len(data) 5000
+unlabeled data has a size of 1496
+
+Train Net2
+
+| Test	 Net1  Acc: 59.70%
+
+| Test	 Net2  Acc: 44.94%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 62.50%
+
+
+==== Test ACC:62.5 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3228
+len(data) 5000
+labeled data has a size of 3228
+len(data) 5000
+unlabeled data has a size of 1772
+len(data) 5000
+labeled data has a size of 2916
+len(data) 5000
+labeled data has a size of 2916
+len(data) 5000
+unlabeled data has a size of 2084
+
+Train Net2
+
+| Test	 Net1  Acc: 56.38%
+
+| Test	 Net2  Acc: 50.70%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 63.06%
+
+
+==== Test ACC:63.06 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3195
+len(data) 5000
+labeled data has a size of 3195
+len(data) 5000
+unlabeled data has a size of 1805
+len(data) 5000
+labeled data has a size of 2783
+len(data) 5000
+labeled data has a size of 2783
+len(data) 5000
+unlabeled data has a size of 2217
+
+Train Net2
+
+| Test	 Net1  Acc: 57.80%
+
+| Test	 Net2  Acc: 55.64%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 64.28%
+
+
+==== Test ACC:64.28 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3205
+len(data) 5000
+labeled data has a size of 3205
+len(data) 5000
+unlabeled data has a size of 1795
+len(data) 5000
+labeled data has a size of 3179
+len(data) 5000
+labeled data has a size of 3179
+len(data) 5000
+unlabeled data has a size of 1821
+
+Train Net2
+
+| Test	 Net1  Acc: 60.00%
+
+| Test	 Net2  Acc: 53.52%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 64.16%
+
+
+==== Test ACC:64.16 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3222
+len(data) 5000
+labeled data has a size of 3222
+len(data) 5000
+unlabeled data has a size of 1778
+len(data) 5000
+labeled data has a size of 3221
+len(data) 5000
+labeled data has a size of 3221
+len(data) 5000
+unlabeled data has a size of 1779
+
+Train Net2
+
+| Test	 Net1  Acc: 59.24%
+
+| Test	 Net2  Acc: 59.38%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 65.76%
+
+
+==== Test ACC:65.76 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3247
+len(data) 5000
+labeled data has a size of 3247
+len(data) 5000
+unlabeled data has a size of 1753
+len(data) 5000
+labeled data has a size of 3262
+len(data) 5000
+labeled data has a size of 3262
+len(data) 5000
+unlabeled data has a size of 1738
+
+Train Net2
+
+| Test	 Net1  Acc: 62.04%
+
+| Test	 Net2  Acc: 61.68%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 67.78%
+
+
+==== Test ACC:67.78 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3319
+len(data) 5000
+labeled data has a size of 3319
+len(data) 5000
+unlabeled data has a size of 1681
+len(data) 5000
+labeled data has a size of 3326
+len(data) 5000
+labeled data has a size of 3326
+len(data) 5000
+unlabeled data has a size of 1674
+
+Train Net2
+
+| Test	 Net1  Acc: 62.38%
+
+| Test	 Net2  Acc: 62.84%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 68.30%
+
+
+==== Test ACC:68.3 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3393
+len(data) 5000
+labeled data has a size of 3393
+len(data) 5000
+unlabeled data has a size of 1607
+len(data) 5000
+labeled data has a size of 3403
+len(data) 5000
+labeled data has a size of 3403
+len(data) 5000
+unlabeled data has a size of 1597
+
+Train Net2
+
+| Test	 Net1  Acc: 53.86%
+
+| Test	 Net2  Acc: 49.92%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 61.76%
+
+
+==== Test ACC:61.76 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3457
+len(data) 5000
+labeled data has a size of 3457
+len(data) 5000
+unlabeled data has a size of 1543
+len(data) 5000
+labeled data has a size of 3218
+len(data) 5000
+labeled data has a size of 3218
+len(data) 5000
+unlabeled data has a size of 1782
+
+Train Net2
+
+| Test	 Net1  Acc: 60.22%
+
+| Test	 Net2  Acc: 40.36%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 57.48%
+
+
+==== Test ACC:57.48 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3415
+len(data) 5000
+labeled data has a size of 3415
+len(data) 5000
+unlabeled data has a size of 1585
+len(data) 5000
+labeled data has a size of 3472
+len(data) 5000
+labeled data has a size of 3472
+len(data) 5000
+unlabeled data has a size of 1528
+
+Train Net2
+
+| Test	 Net1  Acc: 62.88%
+
+| Test	 Net2  Acc: 53.60%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 64.66%
+
+
+==== Test ACC:64.66 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3441
+len(data) 5000
+labeled data has a size of 3441
+len(data) 5000
+unlabeled data has a size of 1559
+len(data) 5000
+labeled data has a size of 3299
+len(data) 5000
+labeled data has a size of 3299
+len(data) 5000
+unlabeled data has a size of 1701
+
+Train Net2
+
+| Test	 Net1  Acc: 62.24%
+
+| Test	 Net2  Acc: 56.94%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 66.42%
+
+
+==== Test ACC:66.42 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3352
+len(data) 5000
+labeled data has a size of 3352
+len(data) 5000
+unlabeled data has a size of 1648
+len(data) 5000
+labeled data has a size of 3432
+len(data) 5000
+labeled data has a size of 3432
+len(data) 5000
+unlabeled data has a size of 1568
+
+Train Net2
+
+| Test	 Net1  Acc: 62.30%
+
+| Test	 Net2  Acc: 60.62%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 67.00%
+
+
+==== Test ACC:67.0 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3441
+len(data) 5000
+labeled data has a size of 3441
+len(data) 5000
+unlabeled data has a size of 1559
+len(data) 5000
+labeled data has a size of 3387
+len(data) 5000
+labeled data has a size of 3387
+len(data) 5000
+unlabeled data has a size of 1613
+
+Train Net2
+
+| Test	 Net1  Acc: 64.90%
+
+| Test	 Net2  Acc: 59.82%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 67.48%
+
+
+==== Test ACC:67.48 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3352
+len(data) 5000
+labeled data has a size of 3352
+len(data) 5000
+unlabeled data has a size of 1648
+len(data) 5000
+labeled data has a size of 3354
+len(data) 5000
+labeled data has a size of 3354
+len(data) 5000
+unlabeled data has a size of 1646
+
+Train Net2
+
+| Test	 Net1  Acc: 65.68%
+
+| Test	 Net2  Acc: 62.40%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 69.14%
+
+
+==== Test ACC:69.14 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3315
+len(data) 5000
+labeled data has a size of 3315
+len(data) 5000
+unlabeled data has a size of 1685
+len(data) 5000
+labeled data has a size of 3459
+len(data) 5000
+labeled data has a size of 3459
+len(data) 5000
+unlabeled data has a size of 1541
+
+Train Net2
+
+| Test	 Net1  Acc: 63.04%
+
+| Test	 Net2  Acc: 61.02%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 67.32%
+
+
+==== Test ACC:67.32 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3257
+len(data) 5000
+labeled data has a size of 3257
+len(data) 5000
+unlabeled data has a size of 1743
+len(data) 5000
+labeled data has a size of 3388
+len(data) 5000
+labeled data has a size of 3388
+len(data) 5000
+unlabeled data has a size of 1612
+
+Train Net2
+
+| Test	 Net1  Acc: 64.66%
+
+| Test	 Net2  Acc: 63.68%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 69.16%
+
+
+==== Test ACC:69.16 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3313
+len(data) 5000
+labeled data has a size of 3313
+len(data) 5000
+unlabeled data has a size of 1687
+len(data) 5000
+labeled data has a size of 3390
+len(data) 5000
+labeled data has a size of 3390
+len(data) 5000
+unlabeled data has a size of 1610
+
+Train Net2
+
+| Test	 Net1  Acc: 63.98%
+
+| Test	 Net2  Acc: 64.00%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 68.50%
+
+
+==== Test ACC:68.5 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3177
+len(data) 5000
+labeled data has a size of 3177
+len(data) 5000
+unlabeled data has a size of 1823
+len(data) 5000
+labeled data has a size of 3262
+len(data) 5000
+labeled data has a size of 3262
+len(data) 5000
+unlabeled data has a size of 1738
+
+Train Net2
+
+| Test	 Net1  Acc: 66.78%
+
+| Test	 Net2  Acc: 64.70%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 69.10%
+
+
+==== Test ACC:69.1 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3277
+len(data) 5000
+labeled data has a size of 3277
+len(data) 5000
+unlabeled data has a size of 1723
+len(data) 5000
+labeled data has a size of 3111
+len(data) 5000
+labeled data has a size of 3111
+len(data) 5000
+unlabeled data has a size of 1889
+
+Train Net2
+
+| Test	 Net1  Acc: 66.42%
+
+| Test	 Net2  Acc: 63.42%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 68.78%
+
+
+==== Test ACC:68.78 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3201
+len(data) 5000
+labeled data has a size of 3201
+len(data) 5000
+unlabeled data has a size of 1799
+len(data) 5000
+labeled data has a size of 3209
+len(data) 5000
+labeled data has a size of 3209
+len(data) 5000
+unlabeled data has a size of 1791
+
+Train Net2
+
+| Test	 Net1  Acc: 65.80%
+
+| Test	 Net2  Acc: 51.32%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 65.60%
+
+
+==== Test ACC:65.6 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3211
+len(data) 5000
+labeled data has a size of 3211
+len(data) 5000
+unlabeled data has a size of 1789
+len(data) 5000
+labeled data has a size of 3258
+len(data) 5000
+labeled data has a size of 3258
+len(data) 5000
+unlabeled data has a size of 1742
+
+Train Net2
+
+| Test	 Net1  Acc: 66.94%
+
+| Test	 Net2  Acc: 61.70%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 68.68%
+
+
+==== Test ACC:68.68 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3224
+len(data) 5000
+labeled data has a size of 3224
+len(data) 5000
+unlabeled data has a size of 1776
+len(data) 5000
+labeled data has a size of 3219
+len(data) 5000
+labeled data has a size of 3219
+len(data) 5000
+unlabeled data has a size of 1781
+
+Train Net2
+
+| Test	 Net1  Acc: 66.50%
+
+| Test	 Net2  Acc: 64.02%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 68.48%
+
+
+==== Test ACC:68.48 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3224
+len(data) 5000
+labeled data has a size of 3224
+len(data) 5000
+unlabeled data has a size of 1776
+len(data) 5000
+labeled data has a size of 3242
+len(data) 5000
+labeled data has a size of 3242
+len(data) 5000
+unlabeled data has a size of 1758
+
+Train Net2
+
+| Test	 Net1  Acc: 66.64%
+
+| Test	 Net2  Acc: 65.20%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 68.68%
+
+
+==== Test ACC:68.68 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3229
+len(data) 5000
+labeled data has a size of 3229
+len(data) 5000
+unlabeled data has a size of 1771
+len(data) 5000
+labeled data has a size of 3258
+len(data) 5000
+labeled data has a size of 3258
+len(data) 5000
+unlabeled data has a size of 1742
+
+Train Net2
+
+| Test	 Net1  Acc: 65.98%
+
+| Test	 Net2  Acc: 66.52%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 68.86%
+
+
+==== Test ACC:68.86 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3134
+len(data) 5000
+labeled data has a size of 3134
+len(data) 5000
+unlabeled data has a size of 1866
+len(data) 5000
+labeled data has a size of 3164
+len(data) 5000
+labeled data has a size of 3164
+len(data) 5000
+unlabeled data has a size of 1836
+
+Train Net2
+
+| Test	 Net1  Acc: 65.38%
+
+| Test	 Net2  Acc: 65.30%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 68.48%
+
+
+==== Test ACC:68.48 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3198
+len(data) 5000
+labeled data has a size of 3198
+len(data) 5000
+unlabeled data has a size of 1802
+len(data) 5000
+labeled data has a size of 3168
+len(data) 5000
+labeled data has a size of 3168
+len(data) 5000
+unlabeled data has a size of 1832
+
+Train Net2
+
+| Test	 Net1  Acc: 66.36%
+
+| Test	 Net2  Acc: 66.48%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 69.12%
+
+
+==== Test ACC:69.12 ====
+
+
+Train Net1
+len(data) 5000
+labeled data has a size of 3180
+len(data) 5000
+labeled data has a size of 3180
+len(data) 5000
+unlabeled data has a size of 1820
+len(data) 5000
+labeled data has a size of 3156
+len(data) 5000
+labeled data has a size of 3156
+len(data) 5000
+unlabeled data has a size of 1844
+
+Train Net2

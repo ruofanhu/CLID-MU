@@ -1,0 +1,64 @@
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+| Building net
+data saved
+data saved
+Namespace(batch_size=128, lr=0.02, alpha=0.5, lambda_u=0, p_threshold=0.5, T=0.5, num_epochs=200, id='clothing1m_vri', data_path='../data', seed='2', gpuid=0, num_class=10, num_batches=3000, log_wandb=False, wandb_project='', wandb_experiment='', wandb_entity='', wandb_resume=False, need_clean=False, single_meta=0, moco_pretrained='/home/rhu/r_work/VRI/VRI_DivideMix/pretrained/ckpt_clothing_resnet50.pth', warmup=10, cos_lr=False, lam=0.01, meta_goal='ce_sloss', tau=0.5, meta_lr=0.0003, meta_bsz=100, model='vgg')
+
+| Test	 Net1  Acc: 40.70%
+
+==== Test ACC:40.7 ====
+
+
+| Test	 Net1  Acc: 46.90%
+
+==== Test ACC:46.9 ====
+
+
+| Test	 Net1  Acc: 52.84%
+
+==== Test ACC:52.84 ====
+
+
+| Test	 Net1  Acc: 61.16%
+
+==== Test ACC:61.16 ====
+
+
+| Test	 Net1  Acc: 61.76%
+
+==== Test ACC:61.76 ====
+
+
+| Test	 Net1  Acc: 62.18%
+
+==== Test ACC:62.18 ====
+
+
+| Test	 Net1  Acc: 69.42%
+
+==== Test ACC:69.42 ====
+
+
+| Test	 Net1  Acc: 69.00%
+
+==== Test ACC:69.0 ====
+
+
+| Test	 Net1  Acc: 64.14%
+
+==== Test ACC:64.14 ====
+
+
+| Test	 Net1  Acc: 67.06%
+
+==== Test ACC:67.06 ====
+
+Traceback (most recent call last):
+  File "/home/rhu/r_work/VRI/VRI_DivideMix/Train_animal_vri.py", line 502, in <module>
+    train_vri(net1,vnet1, optimizer1,train_loader,optimizer_vnet1,meta_loader_1,args)
+  File "/home/rhu/r_work/VRI/VRI_DivideMix/Train_animal_vri.py", line 214, in train_vri
+    vnet = meta_step(net, vnet,optimizer, optimizer_vnet,inputs, labels, meta_loader,args,batch_size,t,args.warmup,one=True)
+  File "/home/rhu/r_work/VRI/VRI_DivideMix/Train_animal_vri.py", line 385, in meta_step
+    val_data, val_labels = batch
+ValueError: too many values to unpack (expected 2)

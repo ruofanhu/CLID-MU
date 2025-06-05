@@ -55,7 +55,7 @@ parser.add_argument('--meta_goal', type=str, default='ce',help='ce,ce_sloss, mae
 parser.add_argument('--scheduler', type=str, default='m_step',help='cos, m_step')
 
 parser.add_argument('--eval_iter', default=250, type=int, help='evaluation every n iterations')
-parser.add_argument('--data_root', type=str, default='/home/rhu/r_work/higher_semilearn/data',help='data folder')
+parser.add_argument('--data_root', type=str, default='data',help='data folder')
 parser.add_argument('--Tmax', type=int, default=10,help='cosine period')
 
 parser.set_defaults(augment=True)
@@ -145,9 +145,7 @@ def build_classifier(args):
     # if args.corruption_type =='unif' or  args.corruption_type =='inst':
     cnn = WideResNet(args.layers, args.dataset == 'cifar10' and 10 or 100,
                    args.widen_factor)
-    # else:
-    #     cnn = ResNet32(args.dataset == 'cifar10' and 10 or 100)
-    # cnn = ResNet18(args.dataset == 'cifar10' and 10 or 100)
+
 
     if torch.cuda.is_available():
         cnn.cuda()
@@ -419,22 +417,13 @@ def main(args,mytxt):
 
 
 if __name__ == '__main__':
-    save_path_dir = './exp_results_new_/'
+    save_path_dir = './exp_results/'
     if not os.path.exists(save_path_dir):
         os.makedirs(save_path_dir)
     # Configure logging
-    txt_name = f'wnet_{args.scheduler}_{args.meta_goal}-{args.dataset}_{args.corruption_type}_\
-               {args.corruption_prob}_lr_{args.lr}_meta_lr_{args.meta_lr}_es_{args.meta_bsz}_tau{args.tau}_seed{args.seed}_{datetime.datetime.now().strftime("%Y%m%d-%H%M%S")}'
+    txt_name = f'wnet_{args.scheduler}_{args.meta_goal}-{args.dataset}_{args.corruption_type}_{args.corruption_prob}_lr_{args.lr}_meta_lr_{args.meta_lr}_es_{args.meta_bsz}_tau{args.tau}_seed{args.seed}_{datetime.datetime.now().strftime("%Y%m%d-%H%M%S")}'
 
-    # txt_name = f'ensemble_single_model-{args.dataset}_{args.corruption_type}_\
-    #            {args.corruption_prob}_lr_{args.lr}_meta_lr_{args.meta_lr}_tau{args.tau}_{datetime.datetime.now().strftime("%Y%m%d-%H%M%S")}'
-    # txt_name = 'single_model-' + args.dataset + '_' + args.corruption_type + '_' \
-    #            + str(args.corruption_prob) + '_' +'lr'+'_'+str(args.lr)+'_'+'meta_lr'+str(args.meta_lr)+'_'+ datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-    # logging.basicConfig(
-    #     filename=f'exp_results/{txt_name}'
-    #     level=logging.INFO, 
-    #     format='%(asctime)s - %(levelname)s - %(message)s')
-    # print(txt_name)
+    
     mytxt = open(save_path_dir + txt_name + '.txt', mode='w', encoding='utf-8')
     print(args) 
 

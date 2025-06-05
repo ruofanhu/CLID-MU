@@ -19,7 +19,7 @@ class EvaluationHook(Hook):
             #     algorithm.best_eval_acc = algorithm.tb_dict['eval/top-1-acc']
             #     algorithm.best_it = algorithm.it
             # update best metrics
-            if algorithm.args.meta_goal == 'feat_expno1N':
+            if algorithm.args.meta_goal == 'clid':
                 if algorithm.tb_dict['eval/clid_loss'] < algorithm.best_clid_loss:
                     algorithm.best_clid_loss = algorithm.tb_dict['eval/clid_loss']
                     algorithm.best_it = algorithm.it                

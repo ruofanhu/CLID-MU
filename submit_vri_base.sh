@@ -12,7 +12,7 @@ w_cov=${11:-0}
 w_svd=${12:-0}
 gamma=${13:-10}
 w_nege=${14:-10}
-for corruption_type in unif
+for corruption_type in unif #inst flip
 do
 for corruption_prob in 0.2 0.6
 # 0.4
@@ -25,27 +25,15 @@ for tau in 0.5
 do
 for dataset in cifar100
 do
-for seed in 11 12
+for seed in 11
 do
 for meta_bsz in 100
 do
-for meta_goal in ce_noisy  #clid 0.01
+for meta_goal in clid  #clid 0.01
 do
 for Tmax in 10
 do
-for w_cov in 0
-do
-for w_svd in 0
-do
-for gamma in 1
-do
-for w_nege in 0
-do
-sbatch run_cifar_vri.sh ${corruption_type} ${corruption_prob} ${meta_lr} ${lr} ${tau} ${dataset} ${seed} ${meta_bsz} ${meta_goal} ${Tmax} ${w_cov} ${w_svd} ${gamma} ${w_nege}
-done
-done
-done
-done
+sbatch run_cifar_vri.sh ${corruption_type} ${corruption_prob} ${meta_lr} ${lr} ${tau} ${dataset} ${seed} ${meta_bsz} ${meta_goal} ${Tmax}
 done
 done
 done

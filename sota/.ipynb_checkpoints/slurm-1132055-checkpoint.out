@@ -1,0 +1,432 @@
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+| Building net
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 14.96%
+
+| Test	 Net2  Acc: 15.76%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 17.52%
+
+
+==== Test ACC:17.52 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 21.64%
+
+| Test	 Net2  Acc: 20.84%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 23.78%
+
+
+==== Test ACC:23.78 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 22.98%
+
+| Test	 Net2  Acc: 24.96%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 26.90%
+
+
+==== Test ACC:26.9 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 26.68%
+
+| Test	 Net2  Acc: 26.74%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 30.12%
+
+
+==== Test ACC:30.12 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 28.34%
+
+| Test	 Net2  Acc: 27.74%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 31.46%
+
+
+==== Test ACC:31.46 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 30.72%
+
+| Test	 Net2  Acc: 30.08%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 33.00%
+
+
+==== Test ACC:33.0 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 30.76%
+
+| Test	 Net2  Acc: 31.58%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 34.92%
+
+
+==== Test ACC:34.92 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 32.20%
+
+| Test	 Net2  Acc: 32.16%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 36.42%
+
+
+==== Test ACC:36.42 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 34.40%
+
+| Test	 Net2  Acc: 34.64%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 38.00%
+
+
+==== Test ACC:38.0 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 34.40%
+
+| Test	 Net2  Acc: 33.98%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 38.62%
+
+
+==== Test ACC:38.62 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 34.76%
+
+| Test	 Net2  Acc: 34.24%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 39.48%
+
+
+==== Test ACC:39.48 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 36.26%
+
+| Test	 Net2  Acc: 37.04%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 39.76%
+
+
+==== Test ACC:39.76 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 36.64%
+
+| Test	 Net2  Acc: 35.24%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 39.04%
+
+
+==== Test ACC:39.04 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 36.48%
+
+| Test	 Net2  Acc: 37.20%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 39.88%
+
+
+==== Test ACC:39.88 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 37.30%
+
+| Test	 Net2  Acc: 38.48%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 41.62%
+
+
+==== Test ACC:41.62 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 37.08%
+
+| Test	 Net2  Acc: 37.92%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 41.04%
+
+
+==== Test ACC:41.04 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 38.32%
+
+| Test	 Net2  Acc: 35.20%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 40.62%
+
+
+==== Test ACC:40.62 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 39.26%
+
+| Test	 Net2  Acc: 38.02%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 42.70%
+
+
+==== Test ACC:42.7 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 39.62%
+
+| Test	 Net2  Acc: 37.86%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 43.54%
+
+
+==== Test ACC:43.54 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 37.66%
+
+| Test	 Net2  Acc: 39.34%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 43.18%
+
+
+==== Test ACC:43.18 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 40.12%
+
+| Test	 Net2  Acc: 39.60%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 43.74%
+
+
+==== Test ACC:43.74 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 39.18%
+
+| Test	 Net2  Acc: 37.82%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 42.76%
+
+
+==== Test ACC:42.76 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 39.74%
+
+| Test	 Net2  Acc: 39.34%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 44.34%
+
+
+==== Test ACC:44.34 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 40.02%
+
+| Test	 Net2  Acc: 38.74%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 43.84%
+
+
+==== Test ACC:43.84 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 39.52%
+
+| Test	 Net2  Acc: 39.82%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 43.60%
+
+
+==== Test ACC:43.6 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 39.30%
+
+| Test	 Net2  Acc: 39.30%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 43.70%
+
+
+==== Test ACC:43.7 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 40.32%
+
+| Test	 Net2  Acc: 37.92%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 44.08%
+
+
+==== Test ACC:44.08 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 38.94%
+
+| Test	 Net2  Acc: 38.36%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 42.78%
+
+
+==== Test ACC:42.78 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 38.66%
+
+| Test	 Net2  Acc: 39.10%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 43.66%
+
+
+==== Test ACC:43.66 ====
+Warmup Net1
+
+Warmup Net2
+
+| Test	 Net1  Acc: 40.12%
+
+| Test	 Net2  Acc: 37.10%
+
+==== net 1 evaluate next epoch training data loss ====
+
+| Test Acc: 43.34%
+
+
+==== Test ACC:43.34 ====
+
+
+Train Net1
+labeled data has a size of 32068
+labeled data has a size of 32068
+unlabeled data has a size of 17942
+labeled data has a size of 31527
+labeled data has a size of 31527
+unlabeled data has a size of 18483

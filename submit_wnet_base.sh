@@ -9,7 +9,7 @@ meta_bsz=${8:-500}
 meta_goal=${9:-ce}
 scheduler=${10:-cos}
 Tmax=${11:-5}
-for corruption_type in unif
+for corruption_type in unif #inst flip
 do
 for corruption_prob in 0.6
 # 0.4
@@ -20,13 +20,13 @@ for lr in 0.05
 do
 for tau in 0.5
 do
-for dataset in cifar100
+for dataset in cifar100 #cifar10
 do
 for seed in 15
 do
 for meta_bsz in 100
 do
-for meta_goal in ce_noisy
+for meta_goal in ce #mae
 do
 for scheduler in cos
 do

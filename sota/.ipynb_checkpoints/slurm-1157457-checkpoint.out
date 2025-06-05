@@ -1,0 +1,62 @@
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+| Building net
+data saved
+data saved
+Namespace(batch_size=128, lr=0.1, alpha=0.5, lambda_u=0, p_threshold=0.5, T=0.5, num_epochs=160, id='clothing1m_vri', data_path='../data', seed='8', gpuid=0, num_class=10, num_batches=3000, log_wandb=False, wandb_project='', wandb_experiment='', wandb_entity='', wandb_resume=False, need_clean=False, single_meta=0, moco_pretrained='/home/rhu/r_work/VRI/VRI_DivideMix/pretrained/ckpt_clothing_resnet50.pth', warmup=10, cos_lr=True, lam=0.01, meta_goal='clid', tau=0.5, meta_lr=0.01, meta_bsz=100, model='vgg')
+
+| Test	 Net1  Acc: 30.42%
+
+==== Test ACC:30.42 ====
+
+
+| Test	 Net1  Acc: 33.26%
+
+==== Test ACC:33.26 ====
+
+
+| Test	 Net1  Acc: 48.02%
+
+==== Test ACC:48.02 ====
+
+
+| Test	 Net1  Acc: 43.22%
+
+==== Test ACC:43.22 ====
+
+
+| Test	 Net1  Acc: 54.58%
+
+==== Test ACC:54.58 ====
+
+
+| Test	 Net1  Acc: 54.62%
+
+==== Test ACC:54.62 ====
+
+
+| Test	 Net1  Acc: 45.32%
+
+==== Test ACC:45.32 ====
+
+
+| Test	 Net1  Acc: 55.42%
+
+==== Test ACC:55.42 ====
+
+
+| Test	 Net1  Acc: 57.04%
+
+==== Test ACC:57.04 ====
+
+
+| Test	 Net1  Acc: 61.34%
+
+==== Test ACC:61.34 ====
+
+data saved
+
+| Test	 Net1  Acc: 42.16%
+
+==== Epoch:10 Test ACC:42.16 ====
+

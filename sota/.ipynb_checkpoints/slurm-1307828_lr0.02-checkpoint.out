@@ -1,0 +1,20 @@
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+| Building net
+Successfully load pre-trained model!!!
+Namespace(batch_size=128, lr=0.02, alpha=0.5, lambda_u=0, p_threshold=0.5, T=0.5, num_epochs=160, id='clothing1m_vri', seed='1', gpuid=0, num_class=14, num_batches=3000, data_path='/home/rhu/r_work/higher_semilearn/data/clothing1m', log_wandb=False, wandb_project='', wandb_experiment='', wandb_entity='', wandb_resume=False, need_clean=False, single_meta=0, moco_pretrained='/home/rhu/r_work/VRI/VRI_DivideMix/pretrained/ckpt_clothing_resnet50.pth', warmup=20, cos_lr=False, lam=0.01, meta_goal='clid', tau=0.5, meta_lr=0.01, meta_bsz=200, model='resnet50')
+
+| Test	 Net1  Acc: 50.93%
+
+==== Epoch 0, Test ACC:50.93102793083793 ====
+
+
+| Test	 Net1  Acc: 55.33%
+
+==== Epoch 1, Test ACC:55.329659889796694 ====
+
+
+| Test	 Net1  Acc: 56.02%
+
+==== Epoch 2, Test ACC:56.02318069542086 ====
+

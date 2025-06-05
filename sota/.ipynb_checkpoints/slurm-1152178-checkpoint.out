@@ -1,0 +1,37 @@
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+| Building net
+data saved
+data saved
+Namespace(batch_size=128, lr=0.1, alpha=0.5, lambda_u=0, p_threshold=0.5, T=0.5, num_epochs=300, id='clothing1m_vri', data_path='../data', seed='8', gpuid=0, num_class=10, num_batches=3000, log_wandb=False, wandb_project='', wandb_experiment='', wandb_entity='', wandb_resume=False, need_clean=False, single_meta=0, moco_pretrained='/home/rhu/r_work/VRI/VRI_DivideMix/pretrained/ckpt_clothing_resnet50.pth', warmup=0, cos_lr=True, lam=0.01, meta_goal='clid', tau=0.5, meta_lr=0.01, meta_bsz=100, model='vgg')
+data saved
+
+| Test	 Net1  Acc: 25.56%
+
+==== Epoch:0 Test ACC:25.56 ====
+
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:143: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+Ensenble {0: 5.249283313751221, 'acc_5': 0.2556, 'acc_1': 0.2556}
+data saved
+
+| Test	 Net1  Acc: 31.36%
+
+==== Epoch:1 Test ACC:31.36 ====
+
+Ensenble {1: 5.148344230651856, 0: 5.249283313751221, 'acc_5': 0.3312, 'acc_1': 0.3136}
+data saved
+
+| Test	 Net1  Acc: 33.26%
+
+==== Epoch:2 Test ACC:33.26 ====
+
+Ensenble {1: 5.148344230651856, 2: 5.1558003425598145, 0: 5.249283313751221, 'acc_5': 0.398, 'acc_1': 0.3136}
+data saved
+
+| Test	 Net1  Acc: 43.28%
+
+==== Epoch:3 Test ACC:43.28 ====
+
+Ensenble {3: 5.025175666809082, 1: 5.148344230651856, 2: 5.1558003425598145, 0: 5.249283313751221, 'acc_5': 0.4232, 'acc_1': 0.4328}
+data saved

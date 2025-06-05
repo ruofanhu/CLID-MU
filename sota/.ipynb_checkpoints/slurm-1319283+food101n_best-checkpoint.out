@@ -1,0 +1,55 @@
+/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/rhu/anaconda3/envs/py310/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN3c1017RegisterOperatorsD1Ev'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+| Building net
+Successfully load pre-trained model!!!
+Namespace(batch_size=128, lr=0.0005, alpha=0.5, lambda_u=0, p_threshold=0.5, T=0.5, num_epochs=160, id='food101n_vri', seed='1', gpuid=0, num_class=101, num_batches=3000, data_path='/home/rhu/r_work/VRI/data/Food101N', log_wandb=False, wandb_project='', wandb_experiment='', wandb_entity='', wandb_resume=False, need_clean=False, single_meta=0, moco_pretrained='/home/rhu/r_work/VRI/VRI_DivideMix/pretrained/ckpt_clothing_resnet50.pth', warmup=5, cos_lr=False, lam=0.01, meta_goal='clid', tau=0.5, meta_lr=0.01, meta_bsz=100, model='resnet50')
+Encoder unfrozen.
+
+| Test	 Net1  Acc: 2.63%
+
+==== Epoch 0, Test ACC:2.62970297029703 ====
+
+
+| Test	 Net1  Acc: 4.48%
+
+==== Epoch 1, Test ACC:4.483168316831684 ====
+
+
+| Test	 Net1  Acc: 6.19%
+
+==== Epoch 2, Test ACC:6.19009900990099 ====
+
+
+| Test	 Net1  Acc: 8.34%
+
+==== Epoch 3, Test ACC:8.344554455445545 ====
+
+
+| Test	 Net1  Acc: 11.49%
+
+==== Epoch 4, Test ACC:11.485148514851485 ====
+
+
+| Test	 Net1  Acc: 36.72%
+
+==== Epoch:5 Test ACC:36.72079207920792 ====
+
+Ensenble {5: 4.5995867093404135, 'acc_5': 0.3672079207920792, 'acc_1': 0.3672079207920792}
+
+| Test	 Net1  Acc: 46.53%
+
+==== Epoch:6 Test ACC:46.53465346534654 ====
+
+Ensenble {6: 4.560452810923258, 5: 4.5995867093404135, 'acc_5': 0.5052277227722772, 'acc_1': 0.46534653465346537}
+
+| Test	 Net1  Acc: 51.20%
+
+==== Epoch:7 Test ACC:51.203960396039605 ====
+
+Ensenble {7: 4.534387111663818, 6: 4.560452810923258, 5: 4.5995867093404135, 'acc_5': 0.5662970297029702, 'acc_1': 0.512039603960396}
+
+| Test	 Net1  Acc: 54.39%
+
+==== Epoch:8 Test ACC:54.388118811881185 ====
+
+Ensenble {8: 4.500926367441813, 7: 4.534387111663818, 6: 4.560452810923258, 5: 4.5995867093404135, 'acc_5': 0.6093069306930693, 'acc_1': 0.5438811881188119}
