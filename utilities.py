@@ -104,8 +104,8 @@ def cov_loss(mlp_feats):
     cov_loss = off_diagonal(cov_mlp_feats).pow_(2).sum().div(mlp_feats.size(1))
     return cov_loss         
     
-def clid_loss(feat,logits,contrast_th=0.1):
-    temperature = contrast_th # temperature could affect
+def clid_loss(feat,logits,temperature=0.5):
+    
     probs_x_ulb = torch.softmax(logits, dim=-1)
     max_probs, y = torch.max(probs_x_ulb, dim=-1)
     feat = F.normalize(feat)
@@ -114,16 +114,13 @@ def clid_loss(feat,logits,contrast_th=0.1):
     m_feat = feat.shape[1] # m_feat is the # of dimensions of the features
     n_feat = feat.shape[0] # n_feat is the # of instances 
     sim_n = torch.mm(feat, feat.t())/temperature 
-    # sim.fill_diagonal_(1)
 
     pos_mask = (sim_n>=0).float()
-    # print(torch.sum((sim_n>=0).float()))
     sim_n = sim_n * pos_mask
     s_ij1 = F.softmax(sim_n,dim=-1)
     
     ####
     eps= 1e-7
-    # weight_graph = torch.mm(max_probs.clone().reshape(-1,1), max_probs.clone().reshape(1,-1))
     weight_graph = torch.mm(normalized_probs,normalized_probs.t())
     
     weight_graph_ = weight_graph/weight_graph.sum(1,keepdim=True).detach()
@@ -131,7 +128,6 @@ def clid_loss(feat,logits,contrast_th=0.1):
     assert weight_graph.shape==(n_feat,n_feat)
 
     entr = torch.sum(-torch.log(s_ij1.detach()+eps)*weight_graph_,dim=1)
-    # entr = torch.sum(-torch.log(s_ij1+eps)*weight_graph_,dim=1)
 
     return entr.mean()
     

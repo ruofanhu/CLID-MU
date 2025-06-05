@@ -11,8 +11,7 @@
 #SBATCH -t 24:00:00
 ##SBATCH -o H-output     	# STDOUT
 ##SBATCH -e H-error      	# STDERR
-##SBATCH --mail-type=BEGIN,END	# notifications for job done & fail
-#SBATCH --mail-user=rhu@wpi.edu 
+
 
 
 corruption_type=${1:-unif}
