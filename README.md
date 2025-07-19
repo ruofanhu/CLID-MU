@@ -3,6 +3,7 @@
 
 [![DOI](https://zenodo.org/badge/843203955.svg)](https://doi.org/10.5281/zenodo.15595960)
 
+paper link: [https://arxiv.org/abs/2507.11807](https://arxiv.org/abs/2507.11807)
 
 ## Environment Setup
 
