@@ -1,9 +1,19 @@
 
 # Cross-Layer Information Divergence Based Meta Update Strategy
 
-[![DOI](https://zenodo.org/badge/843203955.svg)](https://doi.org/10.5281/zenodo.15595960)
+[![KDD 2025](https://img.shields.io/badge/KDD-2025-blue)](https://dl.acm.org/doi/10.1145/3711896.3736880) [![Paper](https://img.shields.io/badge/Paper-ACM-orange)](https://dl.acm.org/doi/10.1145/3711896.3736880) [![arXiv](https://img.shields.io/badge/arXiv-2507.11807-b31b1b.svg)](https://arxiv.org/abs/2507.11807) [![DOI](https://zenodo.org/badge/843203955.svg)](https://doi.org/10.5281/zenodo.15595960) 
 
-paper link: [https://arxiv.org/abs/2507.11807](https://arxiv.org/abs/2507.11807)
+Official implementation of **CLID-MU**, accepted at **KDD 2025**. 
+
+
+## TL;DR 
+
+Meta-learning methods for **learning with noisy labels (LNL)** often rely on a small clean meta-dataset to guide training. However, obtaining trusted clean labels can be expensive or infeasible in real-world settings. 
+
+**CLID-MU removes this requirement.** 
+
+Our key observation is that **clean samples better preserve structural consistency across the last hidden layer and the final prediction layer, whereas noisy samples tend to disrupt this consistency**. CLID-MU measures this **Cross-Layer Information Divergence** and uses it as a label-free signal to guide meta updates. **No clean meta-data → Cross-layer structural consistency → Robust meta-learning under label noise**
+
 
 ## Environment Setup
 
